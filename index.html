@@ -154,6 +154,77 @@ body.is-home .mascot{display:block}
 #newInquiryBtn{margin-bottom:14px}
 #mySub{animation:subIn .3s ease}
 @keyframes subIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+/* Header stability patch: keep the logo inset and the navigation fixed when switching pages. */
+header{
+  display:flex;
+  align-items:center;
+  padding-left:clamp(24px,4vw,58px);
+  padding-right:clamp(24px,4vw,58px);
+  gap:20px;
+}
+.logo{
+  flex:0 0 auto;
+  margin-left:0;
+  padding-left:0;
+  padding-right:7px;
+  min-width:0;
+}
+.logo img{
+  width:clamp(132px,13vw,168px);
+  max-width:100%;
+}
+/* Reserve the mascot's slot even when it is visually hidden on non-home pages. */
+.mascot{
+  display:block;
+  visibility:hidden;
+  flex:0 0 60px;
+  width:60px;
+  height:60px;
+  margin-left:-6px;
+}
+body.is-home .mascot{visibility:visible}
+.topnav{
+  flex:1 1 auto;
+  min-width:0;
+  justify-content:center;
+  align-items:center;
+  gap:9px;
+}
+.topnav button{
+  flex:0 0 auto;
+  min-width:92px;
+  font-weight:600;
+  white-space:nowrap;
+}
+.topnav button.active{font-weight:600}
+.header-actions{
+  flex:0 0 120px;
+  min-width:120px;
+  display:flex;
+  justify-content:flex-end;
+}
+@media(max-width:800px){
+  header{
+    padding:10px 16px;
+    gap:10px;
+  }
+  .logo{flex:1 1 auto;min-width:0;padding-right:0}
+  .logo img{width:138px}
+  .mascot{display:block;visibility:hidden;flex:0 0 46px;width:46px;height:46px;margin-left:-2px}
+  body.is-home .mascot{visibility:visible}
+  .topnav{
+    order:3;
+    flex:0 0 100%;
+    justify-content:flex-start;
+    overflow-x:auto;
+    scrollbar-width:none;
+  }
+  .topnav::-webkit-scrollbar{display:none}
+  .topnav button{min-width:auto;padding:9px 12px}
+  .header-actions{flex:0 0 auto;min-width:0;margin-left:auto}
+}
+
 </style></head><body class="is-home"><header><a class="logo" href="#homePage" aria-label="Room’d 홈으로 이동" onclick="showPage('homePage');return false;"><img src="data:image/png;base64,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" alt="Room’d 로고"><span class="logo-tagline">YOUR ROOM, YOUR MOOD</span></a><div class="mascot" aria-hidden="true"><svg viewBox="0 0 80 80" width="60" height="60"><g class="m-bob"><path class="m-ear m-ear-l" d="M22 34 L20 12 Q20 6 26 9 L38 26Z" fill="#f3e4da" stroke="#9f7869" stroke-width="2" stroke-linejoin="round"/><path class="m-ear m-ear-r" d="M58 34 L60 12 Q60 6 54 9 L42 26Z" fill="#f3e4da" stroke="#9f7869" stroke-width="2" stroke-linejoin="round"/><ellipse cx="40" cy="48" rx="23" ry="21" fill="#fbf4ee" stroke="#9f7869" stroke-width="2"/><g class="m-leaf"><path d="M40 28 Q34 14 42 6 Q50 14 40 28Z" fill="#a7aa98"/><path d="M40 28 Q46 18 56 20 Q50 30 40 28Z" fill="#b9bca9"/></g><g class="m-eye"><ellipse cx="32" cy="46" rx="2.6" ry="3.2" fill="#332923"/><ellipse cx="48" cy="46" rx="2.6" ry="3.2" fill="#332923"/></g><circle cx="26" cy="54" r="3.6" fill="#e8b9ac" opacity=".75"/><circle cx="54" cy="54" r="3.6" fill="#e8b9ac" opacity=".75"/><path d="M37 53 Q40 56 43 53" fill="none" stroke="#332923" stroke-width="1.6" stroke-linecap="round"/><g class="m-arm m-arm-l"><ellipse cx="17" cy="58" rx="5" ry="4" fill="#fbf4ee" stroke="#9f7869" stroke-width="2"/></g><g class="m-arm m-arm-r"><ellipse cx="63" cy="58" rx="5" ry="4" fill="#fbf4ee" stroke="#9f7869" stroke-width="2"/></g></g></svg></div><nav class="topnav" aria-label="주요 메뉴"><button class="navbtn active" data-target="homePage">홈</button><button class="navbtn" data-target="productPage">상품 페이지</button><button class="navbtn" data-target="threePage">3D 페이지</button><button class="navbtn" data-target="myPage">마이페이지</button></nav><div class="header-actions"><button id="reset" style="display:none">배치 초기화</button></div></header><section class="page active" id="homePage"><div class="content-page"><div class="hero"><div><span class="eyebrow">ROOM'D CURATION</span><h1>좋아하는 물건으로<br>완성하는 나의 공간</h1><p>마음에 드는 소품을 발견하고, 3D 공간에 직접 배치해 보세요.</p><button class="primary" data-go="productPage">소품 구경하기 →</button></div><div class="hero-art">🛋️</div></div><div class="section-title"><h2>카테고리</h2><a href="https://domemall.kr/" target="_blank" rel="noopener">도매몰 둘러보기 ↗</a></div><div class="category-row"><button class="category-tile" data-go="productPage"><span class="emoji">🛋️</span><strong>가구</strong><small>공간의 중심이 되는 아이템</small></button><button class="category-tile" data-go="productPage"><span class="emoji">🏺</span><strong>오브제 · 화병</strong><small>작은 디테일 더하기</small></button><button class="category-tile" data-go="productPage"><span class="emoji">🕯️</span><strong>조명 · 캔들</strong><small>분위기를 바꾸는 빛</small></button><button class="category-tile" data-go="threePage"><span class="emoji">🧩</span><strong>3D 공간 배치</strong><small>내 공간에서 미리 보기</small></button></div><div class="section-title"><h2>룸드 추천 아이템</h2><a href="#" data-go="productPage">상품 더 보기 →</a></div><div class="product-grid"><article class="product-card"><div class="product-art sofa">🛋️</div><div class="product-info"><span class="tag">COLOR POINT</span><h3>옐로우 빈백 소파</h3><p>포근한 패브릭 포인트</p><a href="https://domemall.kr/product/detail.html?product_no=441085&amp;cate_no=27702&amp;display_group=1" target="_blank" rel="noopener">도매몰에서 보기 ↗</a></div></article><article class="product-card"><div class="product-art table">▱</div><div class="product-info"><span class="tag">LIVING</span><h3>거실 좌탁</h3><p>내추럴 우드 스타일</p><a href="https://domemall.kr/product/detail.html?product_no=441102&amp;cate_no=27704&amp;display_group=1" target="_blank" rel="noopener">도매몰에서 보기 ↗</a></div></article><article class="product-card"><div class="product-art vase">🏺</div><div class="product-info"><span class="tag">OBJECT</span><h3>화이트 링 오브제 화병</h3><p>꽃 장식을 더한 오브제</p><a href="https://domemall.kr/product/detail.html?product_no=448804&amp;cate_no=26029&amp;display_group=1" target="_blank" rel="noopener">도매몰에서 보기 ↗</a></div></article><article class="product-card"><div class="product-art candle">🕯️</div><div class="product-info"><span class="tag">MOOD</span><h3>캔들 · 무드 소품</h3><p>감성적인 공간 연출</p><a href="https://domemall.kr/product/detail.html?product_no=449770&cate_no=26072&display_group=1" target="_blank" rel="noopener">도매몰에서 찾기 ↗</a></div></article></div><p class="footnote">상품 카드는 프로토타입용 이미지 아이콘으로 표시했어요. 도매몰 전체 상품을 실시간으로 불러오는 기능은 포함되어 있지 않습니다.</p></div></section><section class="page" id="productPage"><div class="content-page"><span class="eyebrow">SHOP THE LOOK</span><div class="page-heading"><div><h1>상품 페이지</h1><p>공간에 어울리는 아이템을 찾아보세요.</p></div><a class="text-link" href="https://domemall.kr/" target="_blank" rel="noopener">도매몰 전체 보기 ↗</a></div><div class="category-row"><button class="category-tile" data-filter="all"><span class="emoji">✦</span><strong>전체 상품</strong><small>룸드 셀렉션</small></button><button class="category-tile" data-filter="furniture"><span class="emoji">🛋️</span><strong>가구</strong><small>좌탁 · 빈백</small></button><button class="category-tile" data-filter="object"><span class="emoji">🏺</span><strong>오브제</strong><small>화병 · 장식품</small></button><button class="category-tile" data-filter="mood"><span class="emoji">🕯️</span><strong>무드 소품</strong><small>캔들 · 조명</small></button></div><div class="section-title"><h2 id="catalogTitle">추천 상품</h2><span class="text-link">상품 선택 후 도매몰에서 상세 확인</span></div><div class="product-grid" id="catalogGrid"><article class="product-card" data-category="furniture"><div class="product-art sofa">🛋️</div><div class="product-info"><span class="tag">FURNITURE</span><h3>옐로우 빈백 소파</h3><p>편안한 패브릭 체어</p><a href="https://domemall.kr/product/detail.html?product_no=441085&amp;cate_no=27702&amp;display_group=1" target="_blank" rel="noopener">상품 상세 보기 ↗</a></div></article><article class="product-card" data-category="furniture"><div class="product-art table">▱</div><div class="product-info"><span class="tag">FURNITURE</span><h3>거실 좌탁</h3><p>100 × 50cm 스타일 참고</p><a href="https://domemall.kr/product/detail.html?product_no=441102&amp;cate_no=27704&amp;display_group=1" target="_blank" rel="noopener">상품 상세 보기 ↗</a></div></article><article class="product-card" data-category="object"><div class="product-art vase">🏺</div><div class="product-info"><span class="tag">OBJECT</span><h3>화이트 링 오브제 화병</h3><p>플라워 데코 오브제</p><a href="https://domemall.kr/product/detail.html?product_no=448804&amp;cate_no=26029&amp;display_group=1" target="_blank" rel="noopener">상품 상세 보기 ↗</a></div></article><article class="product-card" data-category="mood"><div class="product-art candle">🕯️</div><div class="product-info"><span class="tag">MOOD</span><h3>캔들 · 무드 소품</h3><p>공간 분위기 연출용</p><a href="https://domemall.kr/product/detail.html?product_no=449770&cate_no=26072&display_group=1" target="_blank" rel="noopener">도매몰에서 찾기 ↗</a></div></article></div><p class="footnote">이 페이지는 연결된 상품 3종과 프로토타입용 추천 카드를 보여줍니다. 도매몰의 실제 전체 상품 목록은 <a href="https://m.domemall.kr/product/list.html" target="_blank" rel="noopener">도매몰 상품 목록 ↗</a>에서 확인하세요.</p></div></section><section class="page" id="threePage"><div class="layout"><section class="viewport"><canvas id="view"></canvas><div class="title"><h1>나만의 3D 공간 배치</h1><p>3D 공간에서 가구를 직접 이동해 보세요.</p></div><div class="toolbar"><button id="home">기본 시점</button><button id="zin">＋ 확대</button><button id="zout">－ 축소</button></div><div class="tip">빈 곳 드래그: 시점 회전 · 휠: 확대/축소<br>가구 드래그: 바닥 위 이동 · 더블클릭: 상품 페이지</div><div class="status" id="status">3D 장면 준비 중…</div></section>
 <aside id="products"><h2>공간에 놓인 소품</h2><p>가구를 3D 공간 안에서 이동하고 상품 페이지를 열어볼 수 있어요.</p>
 <div class="item"><div class="icon">🏺</div><div><h3>화이트 링 오브제 화병</h3><p>작아진 미니 사이즈 · 꽃 장식 포함</p><button data-product="vase">상품 보러 가기 ↗</button></div></div>
@@ -199,7 +270,7 @@ body.is-home .mascot{display:block}
 </div>
 
 <p class="footnote">마이페이지는 UI 시안이며 실제 로그인, 주문 조회, 쿠폰 등은 서버와 연결되지 않았습니다.</p>
-</div></section><script>function showPage(id){document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id===id));document.querySelectorAll('.navbtn').forEach(b=>b.classList.toggle('active',b.dataset.target===id));document.body.classList.toggle('is-home',id==='homePage');document.getElementById('reset').style.display=id==='threePage'?'inline-block':'none';if(id==='threePage')setTimeout(()=>window.dispatchEvent(new Event('resize')),100);window.scrollTo({top:0,behavior:'smooth'});}document.querySelectorAll('.navbtn').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.target)));document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.go)));document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{const f=b.dataset.filter;document.querySelectorAll('#catalogGrid [data-category]').forEach(c=>c.style.display=(f==='all'||c.dataset.category===f)?'':'none');document.getElementById('catalogTitle').textContent=({all:'추천 상품',furniture:'가구',object:'오브제',mood:'무드 소품'})[f];}));// My page interactions (demo data only; nothing is sent to a server)
+</div></section><script>function showPage(id){document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id===id));document.querySelectorAll('.navbtn').forEach(b=>b.classList.toggle('active',b.dataset.target===id));document.body.classList.toggle('is-home',id==='homePage');document.getElementById('reset').style.display=id==='threePage'?'inline-block':'none';if(id==='threePage')setTimeout(()=>window.dispatchEvent(new Event('resize')),100);window.scrollTo({top:0,behavior:'auto'});}document.querySelectorAll('.navbtn').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.target)));document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.go)));document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{const f=b.dataset.filter;document.querySelectorAll('#catalogGrid [data-category]').forEach(c=>c.style.display=(f==='all'||c.dataset.category===f)?'':'none');document.getElementById('catalogTitle').textContent=({all:'추천 상품',furniture:'가구',object:'오브제',mood:'무드 소품'})[f];}));// My page interactions (demo data only; nothing is sent to a server)
 (function(){
 const $=id=>document.getElementById(id);
 const esc=s=>{const d=document.createElement('div');d.textContent=String(s);return d.innerHTML};
