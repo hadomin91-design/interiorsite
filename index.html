@@ -159,8 +159,9 @@ body.is-home .mascot{display:block}
 header{
   display:flex;
   align-items:center;
-  padding-left:clamp(24px,4vw,58px);
-  padding-right:clamp(24px,4vw,58px);
+  /* Align header contents with .content-page's 1240px / 24px inner guide. */
+  padding-left:max(24px,calc((100vw - 1240px) / 2 + 24px));
+  padding-right:max(24px,calc((100vw - 1240px) / 2 + 24px));
   gap:20px;
 }
 .logo{
