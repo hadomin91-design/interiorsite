@@ -1,3 +1,144 @@
+
+3D 시뮬레이션 HTML
+에서 이어짐
+사용자 첨부 파일
+이거 왜 다운로드가 안된다 하지..
+아아 ㅠㅠ 스크린샷 보니까 다운로드 링크가 파일 카드처럼 표시되는데, 클릭해도 다운로드가 안 되는 상황이구나!
+
+이럴 땐 파일 링크 자체가 제대로 연결되지 않았거나, 브라우저에서 다운로드가 차단됐을 수 있어. 그리고 GitHub에 올릴 파일은 HTML 파일 자체를 다운로드해서 저장해야 해. 화면에 보이는 파일 이름만 복사하면 안 돼.
+
+이번엔 파일을 다시 준비했어! 아래 링크를 눌러 봐. 💗
+
+room'd 전체 홈페이지
+
+index.html · 약 44KB
+
+📥 전체 index.html 다운로드
+
+링크를 클릭해도 반응이 없으면 마우스 오른쪽 버튼을 눌러 새 탭에서 열어 봐.
+
+다운로드되면 이렇게 하면 돼!
+
+GitHub에서 네 홈페이지 저장소 열기
+
+Add file → Upload files 클릭
+
+방금 받은 index.html 파일 선택
+
+Commit changes 누르기
+
+혹시 이 링크도 안 되면 어떤 상황인지 알려줘. ① 눌러도 아무 반응 없음 / ② 오류 메시지가 뜸 / ③ 파일은 받아지는데 열리지 않음 중 어느 쪽이야? ㅠㅠ
+
+
+index.html
+HTML
+흠 텍스트들이 너무 잔잔함.. 강약 조절좀.. 전체 html 식좀
+웅 ㅋㅋㅋ 기존 룸드 홈페이지의 전체 HTML에 글자 강약 조절을 적용했어! 기존 상품 링크와 3D 기능은 유지했어.
+
+📥 수정된 전체 HTML
+룸드 전체 홈페이지 HTML 다운로드
+
+바꾼 부분
+메인 제목: 더 크고 굵게
+
+페이지 제목: 기존보다 확실하게 강조
+
+섹션 제목: 크기와 굵기 차이 확대
+
+상품명: 더 굵고 잘 보이게
+
+설명문: 너무 연하지 않게 대비 강화
+
+버튼: 글씨 굵기와 크기 조절
+
+3D 페이지 안내 텍스트도 가독성 개선
+
+GitHub에 올릴 때는 파일명을 index.html로 바꿔서 기존 파일을 교체하면 돼. HTML 안에 CSS와 JS가 포함되어 있어서 따로 올릴 필요 없어.
+
+
+roomd_typography_hierarchy_index.html
+HTML
+글자들 회색으로?다시 전체 html식좀
+웅 ㅎㅎ 이번엔 홈페이지 글자 전체를 회색 계열로 바꾸고, 제목과 설명은 강약이 있도록 정리했어! 🤍
+
+📥 수정된 전체 HTML 파일
+룸드 회색 글자 버전 전체 HTML 다운로드
+
+글자 색상
+메인 제목: 진한 회색 #333333
+
+일반 본문: 중간 회색 #777777
+
+버튼·메뉴: 회색 #555555
+
+보조 설명: 연한 회색 #888888
+
+기존 홈페이지 구조와 3D 기능은 유지했어.
+
+GitHub에 올릴 때는 파일명을 index.html로 변경해서 기존 파일을 교체하면 돼!
+
+
+roomd_gray_text_hierarchy_index.html
+HTML
+전체 HTML 배포/운영까지 이어지게 Cloudflare Workers 쪽도 확인해볼 만해요.
+
+
+
+아니 식 복붙해야해서.. 올려줘 ㅋㅋ
+
+17s 동안 처리함
+아 ㅋㅋㅋㅋ 다운로드가 아니라 GitHub에 바로 복붙할 전체 HTML 코드 말하는 거지! 😭
+
+코드가 길어서 한 번에 보내면 중간에 잘릴 수 있어. 4개 정도로 나눠서 보낼게. 각 부분을 순서대로 이어 붙이면 돼.
+
+아래는 1/4 부분이야. index.html에 붙여 넣어줘.
+
+<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>room'd | 인테리어 쇼핑 & 3D 공간</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600;700&family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet"><style>
+*{box-sizing:border-box}body{margin:0;font-family:'DM Sans','Noto Sans KR',sans-serif;background:#f6f6f1;color:#35372f}header{min-height:68px;padding:0 22px;display:flex;align-items:center;gap:20px;border-bottom:1px solid #ddd;background:#fbfbf8;position:sticky;top:0;z-index:20}.logo{font-size:22px;font-weight:bold;white-space:nowrap}.topnav{display:flex;gap:6px;flex:1}.topnav button{border:0;background:transparent;border-radius:20px;padding:11px 16px;color:#666}.topnav button.active{background:#e7e9df;color:#333;font-weight:bold}.header-actions{margin-left:auto}button{cursor:pointer;border:1px solid #ddd;background:white;border-radius:8px;padding:9px 12px}.layout{height:calc(100vh - 64px);display:grid;grid-template-columns:minmax(0,1fr) 285px}.viewport{position:relative;min-width:0;overflow:hidden;background:#e8e9e1}canvas{width:100%;height:100%;display:block;touch-action:none}.title{position:absolute;top:16px;left:18px;pointer-events:none}.title h1{font-size:18px;margin:0 0 5px}.title p{font-size:12px;color:#73776d;margin:0}.toolbar{position:absolute;right:12px;top:12px;display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end}.tip{position:absolute;bottom:12px;left:12px;background:#ffffffdc;border:1px solid #ddd;border-radius:8px;padding:9px 11px;font-size:11px;line-height:1.6;color:#62675d;pointer-events:none}.status{position:absolute;bottom:12px;right:12px;background:#ffffffdc;border:1px solid #ddd;border-radius:8px;padding:8px;font-size:11px;pointer-events:none}aside{padding:18px 15px;background:#fbfbf8;border-left:1px solid #ddd;overflow:auto}aside h2{font-size:17px;margin:0 0 8px}aside p{font-size:12px;color:#777;line-height:1.5}.item{display:grid;grid-template-columns:55px 1fr;gap:10px;align-items:center;padding:13px 0;border-top:1px solid #e2e2dc}.icon{height:55px;border-radius:8px;background:#efefe8;display:grid;place-items:center;font-size:25px}.item h3{font-size:13px;margin:0 0 5px}.item p{font-size:11px;margin:0 0 8px}.item button{font-size:11px;padding:7px}.note{font-size:11px;line-height:1.6;background:#eff0e9;border-radius:8px;padding:10px;color:#687163}.rotatebox{margin:14px 0;padding:12px;border:1px solid #e1e1d9;border-radius:10px;background:#f5f5ef}.rotatebox h3{font-size:13px;margin:0 0 7px}.rotatebox p{font-size:11px;margin:0 0 10px}.rotateactions{display:flex;gap:6px;margin-bottom:10px}.rotateactions button{flex:1;padding:8px 5px;font-size:12px}.rotatebox input[type=range]{width:100%;accent-color:#7e8975}.rotatevalue{display:flex;justify-content:space-between;font-size:11px;color:#666;margin-top:5px}
+.page{display:none}.page.active{display:block}.content-page{max-width:1180px;margin:auto;padding:38px 24px 64px}.eyebrow{font-size:11px;letter-spacing:2px;color:#858a7a;font-weight:700}.page-heading{display:flex;justify-content:space-between;align-items:end;gap:20px;margin:10px 0 24px}.page-heading h1{font-size:30px;letter-spacing:-1px;margin:8px 0}.page-heading p{color:#777;margin:0;font-size:14px}.hero{background:#e8e9df;border-radius:22px;min-height:300px;padding:44px;display:flex;align-items:center;justify-content:space-between;overflow:hidden}.hero h1{font-size:42px;line-height:1.25;letter-spacing:-1.8px;margin:12px 0}.hero p{color:#666;line-height:1.8}.hero-art{font-size:130px;padding-right:50px}.primary{background:#35392f;color:white;border:0;border-radius:24px;padding:13px 20px;font-weight:600}.section-title{display:flex;justify-content:space-between;align-items:center;margin:34px 0 16px}.section-title h2{font-size:21px;margin:0}.section-title a,.text-link{color:#666;font-size:13px;text-decoration:none}.category-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.category-tile{padding:20px;border-radius:14px;background:#fff;border:1px solid #ecece5;text-align:left;cursor:pointer}.category-tile .emoji{font-size:28px;display:block;margin-bottom:12px}.category-tile strong{display:block;font-size:14px}.category-tile small{display:block;color:#888;margin-top:5px}.product-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}.product-card{background:#fff;border:1px solid #ecece5;border-radius:15px;overflow:hidden;min-width:0}.product-art{height:190px;background:#efeee7;display:grid;place-items:center;font-size:74px}.product-art.sofa{background:#f0e3a0}.product-art.table{background:#ece8df}.product-art.vase{background:#e8e7e0}.product-art.candle{background:#eee3df}.product-info{padding:14px}.product-info .tag{font-size:10px;color:#7a846e;background:#eff1e9;border-radius:12px;padding:5px 8px;display:inline-block}.product-info h3{font-size:14px;line-height:1.5;min-height:42px;margin:10px 0 6px}.product-info p{font-size:12px;color:#888;margin:0 0 12px}.product-info a{display:block;text-decoration:none;text-align:center;border:1px solid #d8d9d0;border-radius:8px;padding:9px;font-size:12px;color:#444}.account-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:20px}.account-card,.info-card{background:#fff;border:1px solid #e8e8e0;border-radius:16px;padding:24px}.account-card h2,.info-card h2{font-size:18px;margin:0 0 12px}.account-card p{font-size:13px;color:#777;line-height:1.7}.login-row{display:flex;gap:8px;margin-top:18px}.login-row input{min-width:0;flex:1;border:1px solid #ddd;border-radius:8px;padding:12px}.mypage-menu{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}.mypage-menu div{background:#f7f7f2;border-radius:10px;padding:16px 10px;text-align:center;font-size:13px}.mypage-menu b{display:block;font-size:22px;margin-bottom:8px}.order-empty{padding:26px 10px;text-align:center;color:#888;background:#f8f8f4;border-radius:12px;font-size:13px}.footnote{color:#999;font-size:11px;line-height:1.7;margin-top:22px}@media(max-width:800px){header{padding:10px 12px;gap:10px;flex-wrap:wrap}.topnav{order:3;flex-basis:100%;overflow-x:auto}.topnav button{white-space:nowrap;padding:9px 12px}.header-actions{margin-left:auto}.content-page{padding:24px 14px 44px}.hero{padding:26px;min-height:250px}.hero h1{font-size:30px}.hero-art{font-size:72px;padding:0}.page-heading h1{font-size:25px}.category-row{grid-template-columns:repeat(2,1fr)}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.product-art{height:145px;font-size:55px}.product-info{padding:11px}.account-grid{grid-template-columns:1fr}.mypage-menu{grid-template-columns:repeat(2,1fr)}.layout{height:auto;min-height:calc(100vh - 68px);grid-template-columns:1fr;grid-template-rows:65vh auto}.viewport{min-height:400px}aside{border-left:0;border-top:1px solid #ddd}}
+
+/* ROOM'D typography hierarchy + gray text */
+
+다음 부분은 계속이라고 보내면 이어서 줄게.
+
+그냥 전체 한번에줘 ..
+
+14s 동안 처리함
+아아 ㅋㅋㅋ 알겠어 😭 중간에 끊기지 않은 전체 코드 한 번에 원하는 거지!
+
+현재 전체 HTML은 약 48KB라서 채팅창에 한꺼번에 붙이면 코드가 중간에 잘릴 수 있어. 그래서 전체 코드가 그대로 들어 있는 TXT 파일도 준비했어.
+
+📄 전체 HTML 코드 텍스트 열기 / 다운로드
+
+이 파일을 열고:
+
+Ctrl + A — 전체 선택
+
+Ctrl + C — 복사
+
+GitHub의 index.html 편집 화면에서 Ctrl + A
+
+Ctrl + V — 전체 코드 붙여넣기
+
+Commit changes
+
+이렇게 하면 돼! HTML 파일 자체도 그대로 받을 수 있어:
+
+📥 전체 HTML 파일
+
+
+roomd_gray_text_hierarchy_index.txt
+문서
+
+roomd_gray_text_hierarchy_index.html
+HTML
+혹시 관심 있으시면 둘러보세요.
+
+
+
+
+
+
 <!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>room'd | 인테리어 쇼핑 & 3D 공간</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600;700&family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet"><style>
 *{box-sizing:border-box}body{margin:0;font-family:'DM Sans','Noto Sans KR',sans-serif;background:#f6f6f1;color:#35372f}header{min-height:68px;padding:0 22px;display:flex;align-items:center;gap:20px;border-bottom:1px solid #ddd;background:#fbfbf8;position:sticky;top:0;z-index:20}.logo{font-size:22px;font-weight:bold;white-space:nowrap}.topnav{display:flex;gap:6px;flex:1}.topnav button{border:0;background:transparent;border-radius:20px;padding:11px 16px;color:#666}.topnav button.active{background:#e7e9df;color:#333;font-weight:bold}.header-actions{margin-left:auto}button{cursor:pointer;border:1px solid #ddd;background:white;border-radius:8px;padding:9px 12px}.layout{height:calc(100vh - 64px);display:grid;grid-template-columns:minmax(0,1fr) 285px}.viewport{position:relative;min-width:0;overflow:hidden;background:#e8e9e1}canvas{width:100%;height:100%;display:block;touch-action:none}.title{position:absolute;top:16px;left:18px;pointer-events:none}.title h1{font-size:18px;margin:0 0 5px}.title p{font-size:12px;color:#73776d;margin:0}.toolbar{position:absolute;right:12px;top:12px;display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end}.tip{position:absolute;bottom:12px;left:12px;background:#ffffffdc;border:1px solid #ddd;border-radius:8px;padding:9px 11px;font-size:11px;line-height:1.6;color:#62675d;pointer-events:none}.status{position:absolute;bottom:12px;right:12px;background:#ffffffdc;border:1px solid #ddd;border-radius:8px;padding:8px;font-size:11px;pointer-events:none}aside{padding:18px 15px;background:#fbfbf8;border-left:1px solid #ddd;overflow:auto}aside h2{font-size:17px;margin:0 0 8px}aside p{font-size:12px;color:#777;line-height:1.5}.item{display:grid;grid-template-columns:55px 1fr;gap:10px;align-items:center;padding:13px 0;border-top:1px solid #e2e2dc}.icon{height:55px;border-radius:8px;background:#efefe8;display:grid;place-items:center;font-size:25px}.item h3{font-size:13px;margin:0 0 5px}.item p{font-size:11px;margin:0 0 8px}.item button{font-size:11px;padding:7px}.note{font-size:11px;line-height:1.6;background:#eff0e9;border-radius:8px;padding:10px;color:#687163}.rotatebox{margin:14px 0;padding:12px;border:1px solid #e1e1d9;border-radius:10px;background:#f5f5ef}.rotatebox h3{font-size:13px;margin:0 0 7px}.rotatebox p{font-size:11px;margin:0 0 10px}.rotateactions{display:flex;gap:6px;margin-bottom:10px}.rotateactions button{flex:1;padding:8px 5px;font-size:12px}.rotatebox input[type=range]{width:100%;accent-color:#7e8975}.rotatevalue{display:flex;justify-content:space-between;font-size:11px;color:#666;margin-top:5px}
 .page{display:none}.page.active{display:block}.content-page{max-width:1180px;margin:auto;padding:38px 24px 64px}.eyebrow{font-size:11px;letter-spacing:2px;color:#858a7a;font-weight:700}.page-heading{display:flex;justify-content:space-between;align-items:end;gap:20px;margin:10px 0 24px}.page-heading h1{font-size:30px;letter-spacing:-1px;margin:8px 0}.page-heading p{color:#777;margin:0;font-size:14px}.hero{background:#e8e9df;border-radius:22px;min-height:300px;padding:44px;display:flex;align-items:center;justify-content:space-between;overflow:hidden}.hero h1{font-size:42px;line-height:1.25;letter-spacing:-1.8px;margin:12px 0}.hero p{color:#666;line-height:1.8}.hero-art{font-size:130px;padding-right:50px}.primary{background:#35392f;color:white;border:0;border-radius:24px;padding:13px 20px;font-weight:600}.section-title{display:flex;justify-content:space-between;align-items:center;margin:34px 0 16px}.section-title h2{font-size:21px;margin:0}.section-title a,.text-link{color:#666;font-size:13px;text-decoration:none}.category-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.category-tile{padding:20px;border-radius:14px;background:#fff;border:1px solid #ecece5;text-align:left;cursor:pointer}.category-tile .emoji{font-size:28px;display:block;margin-bottom:12px}.category-tile strong{display:block;font-size:14px}.category-tile small{display:block;color:#888;margin-top:5px}.product-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}.product-card{background:#fff;border:1px solid #ecece5;border-radius:15px;overflow:hidden;min-width:0}.product-art{height:190px;background:#efeee7;display:grid;place-items:center;font-size:74px}.product-art.sofa{background:#f0e3a0}.product-art.table{background:#ece8df}.product-art.vase{background:#e8e7e0}.product-art.candle{background:#eee3df}.product-info{padding:14px}.product-info .tag{font-size:10px;color:#7a846e;background:#eff1e9;border-radius:12px;padding:5px 8px;display:inline-block}.product-info h3{font-size:14px;line-height:1.5;min-height:42px;margin:10px 0 6px}.product-info p{font-size:12px;color:#888;margin:0 0 12px}.product-info a{display:block;text-decoration:none;text-align:center;border:1px solid #d8d9d0;border-radius:8px;padding:9px;font-size:12px;color:#444}.account-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:20px}.account-card,.info-card{background:#fff;border:1px solid #e8e8e0;border-radius:16px;padding:24px}.account-card h2,.info-card h2{font-size:18px;margin:0 0 12px}.account-card p{font-size:13px;color:#777;line-height:1.7}.login-row{display:flex;gap:8px;margin-top:18px}.login-row input{min-width:0;flex:1;border:1px solid #ddd;border-radius:8px;padding:12px}.mypage-menu{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}.mypage-menu div{background:#f7f7f2;border-radius:10px;padding:16px 10px;text-align:center;font-size:13px}.mypage-menu b{display:block;font-size:22px;margin-bottom:8px}.order-empty{padding:26px 10px;text-align:center;color:#888;background:#f8f8f4;border-radius:12px;font-size:13px}.footnote{color:#999;font-size:11px;line-height:1.7;margin-top:22px}@media(max-width:800px){header{padding:10px 12px;gap:10px;flex-wrap:wrap}.topnav{order:3;flex-basis:100%;overflow-x:auto}.topnav button{white-space:nowrap;padding:9px 12px}.header-actions{margin-left:auto}.content-page{padding:24px 14px 44px}.hero{padding:26px;min-height:250px}.hero h1{font-size:30px}.hero-art{font-size:72px;padding:0}.page-heading h1{font-size:25px}.category-row{grid-template-columns:repeat(2,1fr)}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.product-art{height:145px;font-size:55px}.product-info{padding:11px}.account-grid{grid-template-columns:1fr}.mypage-menu{grid-template-columns:repeat(2,1fr)}.layout{height:auto;min-height:calc(100vh - 68px);grid-template-columns:1fr;grid-template-rows:65vh auto}.viewport{min-height:400px}aside{border-left:0;border-top:1px solid #ddd}}
@@ -87,355 +228,71 @@ button,.primary,.product-info a,.login-row input,.tip,.status,.note,.rotatebox,.
 button:hover,.product-info a:hover{transition:all .18s ease;transform:translateY(-1px)}
 @media(max-width:800px){.logo{border-radius:12px}.topnav button{border-radius:11px}}
 
-/* Home mascot: a small illustration beside the Room'd logo, with idle wiggle animation */
-.mascot{display:none;flex:none;width:60px;height:60px;margin-left:-6px}
-body.is-home .mascot{display:block}
-.mascot svg{display:block;overflow:visible}
-.m-bob{transform-box:fill-box;transform-origin:50% 100%;animation:mBob 2.8s ease-in-out infinite}
-@keyframes mBob{0%,100%{transform:translateY(0) scale(1,1)}22%{transform:translateY(-3px) scale(.98,1.03)}40%{transform:translateY(0) scale(1.03,.97)}}
-.m-ear{transform-box:fill-box;transform-origin:50% 100%}
-.m-ear-l{animation:mEarL 1.9s ease-in-out infinite}
-.m-ear-r{animation:mEarR 1.9s ease-in-out .3s infinite}
-@keyframes mEarL{0%,100%{transform:rotate(0)}25%{transform:rotate(-10deg)}55%{transform:rotate(5deg)}}
-@keyframes mEarR{0%,100%{transform:rotate(0)}25%{transform:rotate(10deg)}55%{transform:rotate(-5deg)}}
-.m-leaf{transform-box:fill-box;transform-origin:50% 100%;animation:mLeaf 2.2s ease-in-out infinite}
-@keyframes mLeaf{0%,100%{transform:rotate(-9deg)}50%{transform:rotate(11deg)}}
-.m-arm{transform-box:fill-box}
-.m-arm-l{transform-origin:100% 50%;animation:mWaveL 1.4s ease-in-out infinite}
-.m-arm-r{transform-origin:0% 50%;animation:mWaveR 1.4s ease-in-out .7s infinite}
-@keyframes mWaveL{0%,100%{transform:rotate(0)}50%{transform:rotate(-18deg)}}
-@keyframes mWaveR{0%,100%{transform:rotate(0)}50%{transform:rotate(18deg)}}
-.m-eye{transform-box:fill-box;transform-origin:50% 50%;animation:mBlink 4.6s infinite}
-@keyframes mBlink{0%,92%,100%{transform:scaleY(1)}95%{transform:scaleY(.1)}}
-.mascot:hover .m-bob,.mascot:hover .m-ear,.mascot:hover .m-arm{animation-duration:.8s}
-@media (max-width:800px){.mascot{width:46px;height:46px;margin-left:-2px}}
-@media (prefers-reduced-motion:reduce){.mascot *{animation:none!important}}
-
-/* My page sub-screens */
-[hidden]{display:none!important}
-.my-menu-btn{display:block;width:100%;background:#f5eee8;border:0;border-radius:2px;color:#66564c;padding:16px 10px;text-align:center;font-size:13px;transition:background .2s,color .2s}
-.my-menu-btn b{display:block;font-size:22px;margin-bottom:8px}
-.my-menu-btn:hover{background:#efe4db;color:#3d3028}
-.my-back{display:block;background:none;border:0;color:#8b776c;font-size:13px;padding:6px 0;margin-bottom:4px}
-.my-back:hover{color:#332923}
-.status-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px}
-.my-status{font-size:12px;padding:8px 14px;background:#fffdf9;color:#6d6259}
-.my-status.on{background:#332923;color:#fffaf5;border-color:#332923}
-.order-card{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:18px;margin-bottom:12px;cursor:pointer;transition:border-color .2s}
-.order-card:hover{border-color:#d9bdb0}
-.order-head{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:12px;color:#8f8075}
-.order-title{font-family:'Gowun Batang','Noto Sans KR',serif;font-size:15px;margin:9px 0 2px}
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:14px}
-.steps span{font-size:11px;text-align:center;color:#b5a79d;border-top:3px solid #e7ded5;padding-top:7px}
-.steps span.done{color:#59483e;border-color:#c89f8c}
-.order-detail{display:none;margin-top:14px;padding-top:14px;border-top:1px solid var(--line);font-size:13px;color:#6d6259;line-height:1.8}
-.order-card.open .order-detail{display:block}
-.order-actions{display:flex;gap:6px;margin-top:10px}
-.order-actions button,.form-actions button,.wish-actions button{font-size:12px;padding:8px 12px;background:#fffdf9}
-.chip{display:inline-block;font-size:11px;padding:4px 10px;border-radius:999px;background:#f2e8e1;color:#8b6d5e;white-space:nowrap}
-.my-form{display:grid;gap:14px;max-width:560px;background:var(--white);border:1px solid var(--line);border-radius:16px;padding:22px}
-.my-form label{display:grid;gap:6px;font-size:12px;color:#6d6259}
-.my-form input,.my-form select,.my-form textarea,.coupon-row input{font:inherit;font-size:13px;padding:11px;border:1px solid var(--line);border-radius:8px;background:#fffdf9;color:var(--ink);min-width:0}
-.form-actions{display:flex;gap:8px;justify-content:flex-end}
-.form-msg{font-size:12px;color:#8b6d5e;margin:8px 0 0;min-height:16px}
-.sub-h{font-family:'Gowun Batang','Noto Sans KR',serif;font-weight:400;font-size:18px;margin:28px 0 12px}
-.list-card{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:10px}
-.coupon-row{display:flex;gap:8px;max-width:560px;margin-bottom:6px}
-.coupon-row input{flex:1}
-.coupon-card{display:flex;justify-content:space-between;align-items:center;gap:12px}
-.coupon-card b{font-family:'Gowun Batang','Noto Sans KR',serif;font-weight:500;font-size:15px}
-.coupon-card small{display:block;font-size:12px;color:#95877e;margin-top:4px}
-.wish-actions{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
-.wish-actions a{flex:1 1 100%;text-decoration:none;text-align:center;border:1px solid #d9cec5;border-radius:8px;padding:8px;font-size:12px;color:#55473e;background:#fffdf9}
-.wish-actions button{flex:1}
-.inquiry-item{cursor:pointer}
-.inquiry-ans{display:none;margin-top:10px;font-size:13px;line-height:1.7;color:#6d6259;background:#faf6f0;border-radius:10px;padding:12px}
-.inquiry-item.open .inquiry-ans{display:block}
-#newInquiryBtn{margin-bottom:14px}
-#mySub{animation:subIn .3s ease}
-@keyframes subIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
-
-/* Header stability patch: keep the logo inset and the navigation fixed when switching pages. */
-header{
-  display:flex;
-  align-items:center;
-  /* Align header contents with .content-page's 1240px / 24px inner guide. */
-  padding-left:max(24px,calc((100vw - 1240px) / 2 + 24px));
-  padding-right:max(24px,calc((100vw - 1240px) / 2 + 24px));
-  gap:20px;
-}
-.logo{
-  flex:0 0 auto;
-  margin-left:0;
-  padding-left:0;
-  padding-right:7px;
-  min-width:0;
-}
-.logo img{
-  width:clamp(132px,13vw,168px);
-  max-width:100%;
-}
-/* Reserve the mascot's slot even when it is visually hidden on non-home pages. */
-.mascot{
-  display:block;
-  visibility:hidden;
-  flex:0 0 60px;
-  width:60px;
-  height:60px;
-  margin-left:-6px;
-}
-body.is-home .mascot{visibility:visible}
-.topnav{
-  flex:1 1 auto;
-  min-width:0;
-  justify-content:center;
-  align-items:center;
-  gap:9px;
-}
-.topnav button{
-  flex:0 0 auto;
-  min-width:92px;
-  font-weight:600;
-  white-space:nowrap;
-}
-.topnav button.active{font-weight:600}
-.header-actions{
-  flex:0 0 120px;
-  min-width:120px;
-  display:flex;
-  justify-content:flex-end;
-}
-@media(max-width:800px){
-  header{
-    padding:10px 16px;
-    gap:10px;
-  }
-  .logo{flex:1 1 auto;min-width:0;padding-right:0}
-  .logo img{width:138px}
-  .mascot{display:block;visibility:hidden;flex:0 0 46px;width:46px;height:46px;margin-left:-2px}
-  body.is-home .mascot{visibility:visible}
-  .topnav{
-    order:3;
-    flex:0 0 100%;
-    justify-content:flex-start;
-    overflow-x:auto;
-    scrollbar-width:none;
-  }
-  .topnav::-webkit-scrollbar{display:none}
-  .topnav button{min-width:auto;padding:9px 12px}
-  .header-actions{flex:0 0 auto;min-width:0;margin-left:auto}
-}
-
-</style></head><body class="is-home"><header><a class="logo" href="#homePage" aria-label="Room’d 홈으로 이동" onclick="showPage('homePage');return false;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATUAAABbCAYAAAASlhKaAAAMaUlEQVR42u1dS5LjqhJNHO3aijXpbfQdVG3FmvROyluxB+9t403srVgD3kTuUOsKSCATAT4nwoMbfQvxSQ4nE0iMtZYAAAB6wQFdAAAASA0AAACkBgAAAFLrAsaYszEGwUsAKIAf6AJ1QgOZAQBITZxYrkT0a/7Po9JnJiIia+0HCA0AdpzvrR/pMMaciOh/imQlicFa+4DZAYAemoqpvWJTyx8R3RshNCKi+7r+s4oEAOAdlJox5kxE3wU/OSX+nSSpTksXFgCAxklNicgmIvqp7frNqutTskxrrYGZAkCD7ufCncwhtNFaazZ+HwUI7eQitK06EdEY0y9z+QAA1K7UMnYIb9bar5pI2fFP7M0BY8yT4cpiswEAaiS1FDKr1RXztSWlzrMqu/vcacTdAKAS99MYc40htJXL1j2hzX/3mP92cPwvR5yBA4CdSc0Yc5onIieQPtZMZIs2nX1qKrf8BblJu+4AAPczV51FkNmlmc5TUGk1fAsAWsaPPSf+UtW0FiMKtGtQ+ORAjjibMcaC2ACggPvJIbTXkYvGCO0achulvxkqE0c+AEDZ/WQQWlVHMlpwBUNHPqDWAEBJqTEIbeiR0Ijopvz53zBZ4C3U1sY97/n3DHlK4kotRGgtq4nQFa4SbcOGAeCzyR5sgBu2KkJqPRMao31DgatYcD+BoD02LhyyCE3U/Qyc2eqd0KZCV5eOmMpAyB5bPb/I3OwKniwQU2q9u0U1tK93JQyw7SB47rNFW5BQaWJK7Z0JjXTOpKWuYsB74JNhL90lH+VyifY1qaH1jgyRScGMGXfMZSACvzpTaSO7rFz3E25nkToEE2fC9Xwr97O7WzqSoRU1pdYJoZ0lVg4BfGMqA5Fz678dkXSUx5el1DwByy7yfbWwOQCVBsX2mnO02B1vySakN8ByL7S70lf3QGhPqZVD2c0YML2h2CLspaV5lkTOB5iGE75Dro8Cg80x0BtSewOzvSw3tMYe5hklXjvUILWxAwPZ1e2MILQvTGdgxn1ho5dG5lnowH6SfR8yKnR1VOTSsmUEjnDcCnwfhAYk20xj8VXfBlhyWCV5o8B1D7GUktH6zo5phUKPrfwZbLicgMNem7ENzeQQzZKahloJEIuawXADvNjlBDpRaKri4dDgQL7c3v9oxiU2Ovqh0JZzhLsJQgP+PGC0sJupQUJTfbAoR6ltykftDn4NpsLDJr5LwqIqjXNDAOoMCKmbVm1DO8STrNT22BBQvtT9qa3SFm+ecghtAKEBGyqmiecjE1WayMmJ3BsFtqSyWEnuD8FynckXc9sTo8o0VCEAvJNKI1J4Ik9rZ3IVFJW+sXAUrOczpTyoMuANCM2n0sRuxuRuFIyFOuOqWHZw5ZgD+s/5Z32/SEIbWnYlACASviMccjFrrdRDUhN1HcCXJICIs2GSgHsJvKtK+y7hpUiQmpMYBOJR6x1J6V1I7QvAExH9BIkBILVyh9qzY2rW2ocx5kYbu4c58bWNTrgpHKsQJbAespMAgJJKK0JoIkqNqXrYE95Rzih9hCRFpSH2BQCic01FCIjdKJgnvOs08HH1wvL55bqug+8bfzsoENoTpgYAu6s0Fc9G9JrUXMnQ1uyRiL5nAruTe7dwmncGNeJRR+kBatDY1gvKs/SLVY46nEEFdasuxm85hq4dz0mtjpIvtG8QQEpufdW0OgG3cySif8h/u6DnR5nV3P2EOiC9UkULIAmfEtCcR5oPr1wWZ7BujElk5t+X8uCE6vzVqWE+I+KI3xpnAxfXxDj4lNydDiiLE0NRvv7fq+R41J6Ce+FRccBVX6rnW9WUWoMq5Y866e3Zv4yJMwjee02tQ7ZqDHzbqQiljyvtma5LS5256r7nHHqbNwoYqYMvHbb5xHkkdqGS18Z2L1SH26oOEyMmI0Fok4fQLAm5XAuV3AqhPRltT024oH4L6W2UWsC4/1Ik0k92VbrSOrfTpZIPclZ75kqfpNZC39/6dq5C2VhIm3qEWuJJRs0EEVBqf3eyb5AepVeTnQntFthOH3PdRmYdfAY+CKg1FUKLUKdvR2gzjnuptLdRain+fatxNSaZfMX0WWL8yO5Zh0C2lH8pv0CSUBG74SrllgmthnnTvVLT2F2q/CxVNqFp93mhHWbfu61ZhEYbZzGZscNlHWoitCujvrmEVMz76Vqp5bxY02JcTbLOqSoplE9u7zpIvGouUMZYy8ZUTtyzVu+md6Xmi2mEztQMLTWUsbtrCk2QYwWG7arDzTMJJ2ZuuyG3jMp22qUI7VSDSuua1Biq5SPw74+MQayNwMcKJsht73Ffur0b72Wy3MGXXazdzZnMOGWMrcyRyIX9XguJd0lqDMIZlSdw6faGdncvHAN33N2TUopfkXWQvtEweMjowbSdYcNli3q+sCK3MzTG7FRfJR5TiWpbjzE1qdiS5ivSBds7MFRndn9xb2vsVQdrrVnHjxzHOmLK2Nx48ZRRUyxNJf5awxzpTqkx0gqxJTVjIp5rby+D0K4Cdaj6tsYGGUU/ABxBaKcGVFrIZoxQWdMe7euK1EKBas4kj8R3Bc0+ZhL4L4FFICuex1iIbowybMAulgrtI7MM39GYe2obGrIZVll7HVvpyv3UOIZRswsqUTeJIxi57odmHWaFxToa4mnHwCE033m32GMRWnaldeSmpjZ3o9SEd3JiXNA9s+juvuMpdLj5t5I7NQkQ2rRSeb4Nj88cN6yQLUkRmsgRIo0QThdKTfIAYSkFqN3myPNFrnKyAvxCq37wOpHQJeysMiQucRdQaT5lH3VtS1qlkWCaq0NGB12ZqX1tgRXorkw6Q+nVJrfNEUr0kaFS1VdEBqE9c8hIihQpMUV8YZX2ndrPGl7Rct5IxroPCZ3/ytYZc1fuGJNptAa3kzvxGW6glkqTbPOkUIfYwHiqu3zUHn/GovYUWFCPgvUlrfHnzN0IgvpWCZVYa1k/IjoRkQ38zty/5X43UKdQfa4S35m/dU1pu8Yv1G6JMmuoAxGdtMdfuwxmu5+S88LxjbPEWKVygK8+0m1lxdQYMauh9CvknMwK4s/ZVxBb00o8uG6bJ7WOWBLF1DoIuozZYxoYD9a80IgracQ+QzunibE0+Td9maSWdWJdyf26lyYYZmrsi3LbQ3VIytO1Ue5f5cQmUJTKwZaaEaMEoUmQhVSW4Yx6colXMiOwapsPmQN/K01oM4oTGrNc1dgaMyj+IWTwx9Uj0/fVuBvhGJ31xXAjX16SiNHkxrZuwrZFSjb9kJhz3D5bxeRUjh0dcoKCezwnV3ueM60dwdVtiUmw3OtG/40eJRp8xjCWWNd2Ntdh8JDFEPj+RcCOHplk8bWXreyxmEb02T1mnFLwQ4CdayIM9Z2j9Ql11yRVULB/XfORmBAzmXyu+282tpL3FO/r1Xvuv11SrUfEha4ZfX+tYCGemDZyjLF/Zn+pzdWcGwVFt545hFbQFZ4iJql020clMtkllLCxOXBhTLIst5eTXoiJXyn1WC0me+ZX+x1pI0Nq36/aPGnamnejoIaUIswA5R6bFVIv73BWt891mb67jolkIva4imYdtHfxhNKGe+2x1OZAqN9iDyUHbK+aNh8yJ5v2QJxrJDTuip7bRy738KWsBNWRkewDzg2LREKTShmt+iZlbYQWIGWR8eG2uYSHl6zUtAdF8kzMnmotlXS3FCrzeIP3SIcgoSWrtdQ6aN8zlXqGj/l8XtHFmNvmDLvjJMws8ppZSKkNOxDFK91y1YQWUYd77LUwjmHFqpCtJ9yE+nDiqqqcOmg/7JHYFz8TSWUP72IMqbWNozsuDtgq6zMw1rdSpyWCh29LqjWOOivZOXsoNkcM0fm3gZQ5LqIT7cNA+ycX2e6VMjolvpSqgDb+fa9wScoRkhS7233OBmNqEhkOOGTGVWe1EVqEor2HYk2OlTK0Kzl4FNtxo08H6T4M2IirDjGEJrVb6apvjkdyc41lTYQWS9zrB2ky+n0sPme1L7OnXLClHS+LZ1wYPkW058rth4jvPwPfPBXog6fGOJLwxfl1ggLNy+KkfFFdob7nvcemyIV2j1sUE2dJyTc1Vvbwq2QfacV5uoMxxrbQFxuX25uy327sJTbzbaGrHU0bg0Af3Sp1swGgP1LTJLeelAlz0wPqDACEkXz4dg4kmnkSphwEnWgOGC/K6QbW2o+YvumxDwCgKaUGJCu4MxH9A/cSAEBqAAAAeu4nAAAASA0AAACkBgAAwMf/AVRMqdnrMkt2AAAAAElFTkSuQmCC" alt="Room’d 로고"><span class="logo-tagline">YOUR ROOM, YOUR MOOD</span></a><div class="mascot" aria-hidden="true"><svg viewBox="0 0 80 80" width="60" height="60"><g class="m-bob"><path class="m-ear m-ear-l" d="M22 34 L20 12 Q20 6 26 9 L38 26Z" fill="#f3e4da" stroke="#9f7869" stroke-width="2" stroke-linejoin="round"/><path class="m-ear m-ear-r" d="M58 34 L60 12 Q60 6 54 9 L42 26Z" fill="#f3e4da" stroke="#9f7869" stroke-width="2" stroke-linejoin="round"/><ellipse cx="40" cy="48" rx="23" ry="21" fill="#fbf4ee" stroke="#9f7869" stroke-width="2"/><g class="m-leaf"><path d="M40 28 Q34 14 42 6 Q50 14 40 28Z" fill="#a7aa98"/><path d="M40 28 Q46 18 56 20 Q50 30 40 28Z" fill="#b9bca9"/></g><g class="m-eye"><ellipse cx="32" cy="46" rx="2.6" ry="3.2" fill="#332923"/><ellipse cx="48" cy="46" rx="2.6" ry="3.2" fill="#332923"/></g><circle cx="26" cy="54" r="3.6" fill="#e8b9ac" opacity=".75"/><circle cx="54" cy="54" r="3.6" fill="#e8b9ac" opacity=".75"/><path d="M37 53 Q40 56 43 53" fill="none" stroke="#332923" stroke-width="1.6" stroke-linecap="round"/><g class="m-arm m-arm-l"><ellipse cx="17" cy="58" rx="5" ry="4" fill="#fbf4ee" stroke="#9f7869" stroke-width="2"/></g><g class="m-arm m-arm-r"><ellipse cx="63" cy="58" rx="5" ry="4" fill="#fbf4ee" stroke="#9f7869" stroke-width="2"/></g></g></svg></div><nav class="topnav" aria-label="주요 메뉴"><button class="navbtn active" data-target="homePage">홈</button><button class="navbtn" data-target="productPage">상품 페이지</button><button class="navbtn" data-target="threePage">3D 페이지</button><button class="navbtn" data-target="myPage">마이페이지</button></nav><div class="header-actions"><button id="reset" style="display:none">배치 초기화</button></div></header><section class="page active" id="homePage"><div class="content-page"><div class="hero"><div><span class="eyebrow">ROOM'D CURATION</span><h1>좋아하는 물건으로<br>완성하는 나의 공간</h1><p>마음에 드는 소품을 발견하고, 3D 공간에 직접 배치해 보세요.</p><button class="primary" data-go="productPage">소품 구경하기 →</button></div><div class="hero-art">🛋️</div></div><div class="section-title"><h2>카테고리</h2><a href="https://domemall.kr/" target="_blank" rel="noopener">도매몰 둘러보기 ↗</a></div><div class="category-row"><button class="category-tile" data-go="productPage"><span class="emoji">🛋️</span><strong>가구</strong><small>공간의 중심이 되는 아이템</small></button><button class="category-tile" data-go="productPage"><span class="emoji">🏺</span><strong>오브제 · 화병</strong><small>작은 디테일 더하기</small></button><button class="category-tile" data-go="productPage"><span class="emoji">🕯️</span><strong>조명 · 캔들</strong><small>분위기를 바꾸는 빛</small></button><button class="category-tile" data-go="threePage"><span class="emoji">🧩</span><strong>3D 공간 배치</strong><small>내 공간에서 미리 보기</small></button></div><div class="section-title"><h2>룸드 추천 아이템</h2><a href="#" data-go="productPage">상품 더 보기 →</a></div><div class="product-grid"><article class="product-card"><div class="product-art sofa">🛋️</div><div class="product-info"><span class="tag">COLOR POINT</span><h3>옐로우 빈백 소파</h3><p>포근한 패브릭 포인트</p><a href="https://domemall.kr/product/detail.html?product_no=441085&amp;cate_no=27702&amp;display_group=1" target="_blank" rel="noopener">도매몰에서 보기 ↗</a></div></article><article class="product-card"><div class="product-art table">▱</div><div class="product-info"><span class="tag">LIVING</span><h3>거실 좌탁</h3><p>내추럴 우드 스타일</p><a href="https://domemall.kr/product/detail.html?product_no=441102&amp;cate_no=27704&amp;display_group=1" target="_blank" rel="noopener">도매몰에서 보기 ↗</a></div></article><article class="product-card"><div class="product-art vase">🏺</div><div class="product-info"><span class="tag">OBJECT</span><h3>화이트 링 오브제 화병</h3><p>꽃 장식을 더한 오브제</p><a href="https://domemall.kr/product/detail.html?product_no=448804&amp;cate_no=26029&amp;display_group=1" target="_blank" rel="noopener">도매몰에서 보기 ↗</a></div></article><article class="product-card"><div class="product-art candle">🕯️</div><div class="product-info"><span class="tag">MOOD</span><h3>캔들 · 무드 소품</h3><p>감성적인 공간 연출</p><a href="https://domemall.kr/product/detail.html?product_no=449770&cate_no=26072&display_group=1" target="_blank" rel="noopener">도매몰에서 찾기 ↗</a></div></article></div><p class="footnote">상품 카드는 프로토타입용 이미지 아이콘으로 표시했어요. 도매몰 전체 상품을 실시간으로 불러오는 기능은 포함되어 있지 않습니다.</p></div></section><section class="page" id="productPage"><div class="content-page"><span class="eyebrow">SHOP THE LOOK</span><div class="page-heading"><div><h1>상품 페이지</h1><p>공간에 어울리는 아이템을 찾아보세요.</p></div><a class="text-link" href="https://domemall.kr/" target="_blank" rel="noopener">도매몰 전체 보기 ↗</a></div><div class="category-row"><button class="category-tile" data-filter="all"><span class="emoji">✦</span><strong>전체 상품</strong><small>룸드 셀렉션</small></button><button class="category-tile" data-filter="furniture"><span class="emoji">🛋️</span><strong>가구</strong><small>좌탁 · 빈백</small></button><button class="category-tile" data-filter="object"><span class="emoji">🏺</span><strong>오브제</strong><small>화병 · 장식품</small></button><button class="category-tile" data-filter="mood"><span class="emoji">🕯️</span><strong>무드 소품</strong><small>캔들 · 조명</small></button></div><div class="section-title"><h2 id="catalogTitle">추천 상품</h2><span class="text-link">상품 선택 후 도매몰에서 상세 확인</span></div><div class="product-grid" id="catalogGrid"><article class="product-card" data-category="furniture"><div class="product-art sofa">🛋️</div><div class="product-info"><span class="tag">FURNITURE</span><h3>옐로우 빈백 소파</h3><p>편안한 패브릭 체어</p><a href="https://domemall.kr/product/detail.html?product_no=441085&amp;cate_no=27702&amp;display_group=1" target="_blank" rel="noopener">상품 상세 보기 ↗</a></div></article><article class="product-card" data-category="furniture"><div class="product-art table">▱</div><div class="product-info"><span class="tag">FURNITURE</span><h3>거실 좌탁</h3><p>100 × 50cm 스타일 참고</p><a href="https://domemall.kr/product/detail.html?product_no=441102&amp;cate_no=27704&amp;display_group=1" target="_blank" rel="noopener">상품 상세 보기 ↗</a></div></article><article class="product-card" data-category="object"><div class="product-art vase">🏺</div><div class="product-info"><span class="tag">OBJECT</span><h3>화이트 링 오브제 화병</h3><p>플라워 데코 오브제</p><a href="https://domemall.kr/product/detail.html?product_no=448804&amp;cate_no=26029&amp;display_group=1" target="_blank" rel="noopener">상품 상세 보기 ↗</a></div></article><article class="product-card" data-category="mood"><div class="product-art candle">🕯️</div><div class="product-info"><span class="tag">MOOD</span><h3>캔들 · 무드 소품</h3><p>공간 분위기 연출용</p><a href="https://domemall.kr/product/detail.html?product_no=449770&cate_no=26072&display_group=1" target="_blank" rel="noopener">도매몰에서 찾기 ↗</a></div></article></div><p class="footnote">이 페이지는 연결된 상품 3종과 프로토타입용 추천 카드를 보여줍니다. 도매몰의 실제 전체 상품 목록은 <a href="https://m.domemall.kr/product/list.html" target="_blank" rel="noopener">도매몰 상품 목록 ↗</a>에서 확인하세요.</p></div></section><section class="page" id="threePage"><div class="layout"><section class="viewport"><canvas id="view"></canvas><div class="title"><h1>나만의 3D 공간 배치</h1><p>3D 공간에서 가구를 직접 이동해 보세요.</p></div><div class="toolbar"><button id="home">기본 시점</button><button id="zin">＋ 확대</button><button id="zout">－ 축소</button></div><div class="tip">빈 곳 드래그: 시점 회전 · 휠: 확대/축소<br>가구 드래그: 바닥 위 이동 · 더블클릭: 상품 페이지</div><div class="status" id="status">3D 장면 준비 중…</div></section>
+/* Typography grayscale hierarchy: text colors only */
+body{color:#454545!important}
+body p, body .description, body .sub, body .subtitle, body .muted, body small, body label{color:#777!important}
+body h1, body h2, body h3, body h4, body .title, body .section-title, body .page-title{color:#333!important}
+body .hero h1, body .hero h2{color:#292929!important}
+body .hero p, body .hero .subtitle{color:#737373!important}
+body .product-info h3, body .product-name, body .category-tile h3{color:#3e3e3e!important}
+body .product-info p, body .product-info .price, body .product-info .tag{color:#777!important}
+body button, body .topnav button, body .primary, body a{color:#555!important}
+body .topnav button.active{color:#333!important}
+body input, body textarea, body select{color:#555!important}
+body .tip, body .status, body .note{color:#666!important}
+</style>
+<style>
+/* Typography hierarchy update: clearer headlines, stronger text contrast, readable body */
+:root{--ink:#29211d;--muted:#6f6259;--line:#dfd3c9;--accent:#8b5e4c;--accent-dark:#674536}
+body{color:var(--ink);font-size:15px;line-height:1.65}
+.logo{font-size:25px;font-weight:700;letter-spacing:-.4px}
+.logo-tagline{font-size:10px;letter-spacing:2.2px;font-weight:600}
+.topnav button{font-size:14px;font-weight:500;color:#65574e;padding:14px 17px}
+.topnav button.active{font-weight:700;color:#39291f;border-bottom:2px solid var(--accent)}
+.eyebrow{font-size:12px;letter-spacing:3.2px;font-weight:700;color:#875b49}
+.page-heading{margin:14px 0 30px}
+.page-heading h1{font-size:clamp(34px,4vw,44px);font-weight:700;line-height:1.25;color:#2b211c;letter-spacing:-1.2px}
+.page-heading p{font-size:16px;color:#6c5d54;line-height:1.8}
+.hero{min-height:390px}
+.hero h1{font-size:clamp(38px,5vw,58px);font-weight:700;line-height:1.3;letter-spacing:-1.6px;color:#2a201b}
+.hero h1 strong,.hero h1 b{color:#805340;font-weight:700}
+.hero p{font-size:16px;color:#5e5047;line-height:1.9;font-weight:500}
+.primary{font-size:14px;font-weight:700;padding:15px 27px;letter-spacing:.2px}
+.section-title{margin:54px 0 20px}
+.section-title h2{font-size:clamp(24px,3vw,31px);font-weight:700;letter-spacing:-.6px;color:#2b211c}
+.section-title a,.text-link{font-size:14px;font-weight:600;color:#79513f}
+.category-tile{padding:26px}
+.category-tile strong{font-size:17px;font-weight:700;color:#33271f}
+.category-tile small{font-size:13px;color:#75665c;font-weight:500}
+.product-info .tag{font-size:11px;font-weight:700;letter-spacing:.8px}
+.product-info h3{font-size:17px;font-weight:700;line-height:1.5;color:#30241e}
+.product-info p{font-size:14px;color:#6e6057;font-weight:500}
+.product-info a{font-size:14px;font-weight:700;padding:11px}
+button{font-size:14px;font-weight:600}
+.account-card h2,.info-card h2{font-size:24px;font-weight:700;color:#2b211c}
+.account-card p{font-size:15px;color:#6b5d54;line-height:1.8}
+.mypage-menu div{font-size:15px;font-weight:600}
+.footnote{font-size:13px;color:#786a60}
+/* 3D workspace text */
+.title h1{font-size:25px;font-weight:700;letter-spacing:-.5px;color:#2c241f}
+.title p{font-size:14px;color:#5e554d;font-weight:500}
+aside h2{font-size:23px;font-weight:700;color:#30241e}
+aside p{font-size:14px;color:#6b5d54;line-height:1.7}
+.item h3{font-size:16px;font-weight:700;color:#30241e}
+.item p{font-size:13px;color:#6d5f56}
+.item button{font-size:13px;font-weight:700}
+.note{font-size:13px;color:#51483f;line-height:1.7;font-weight:500}
+.rotatebox h3{font-size:16px;font-weight:700}
+.rotatebox p{font-size:13px;color:#66584e}
+.tip,.status{font-size:13px;line-height:1.65;color:#4e453e;font-weight:500}
+@media(max-width:800px){.page-heading h1{font-size:30px}.hero h1{font-size:clamp(30px,7vw,42px)}.hero p{font-size:14px}.section-title h2{font-size:24px}.category-tile strong{font-size:15px}.product-info h3{font-size:15px}.title h1{font-size:21px}aside h2{font-size:21px}}
+</style>
+</head><body><header><a class="logo" href="#homePage" aria-label="Room’d 홈으로 이동" onclick="showPage('homePage');return false;"><img src="data:image/png;base64,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" alt="Room’d 로고"><span class="logo-tagline">YOUR ROOM, YOUR MOOD</span></a><nav class="topnav" aria-label="주요 메뉴"><button class="navbtn active" data-target="homePage">홈</button><button class="navbtn" data-target="productPage">상품 페이지</button><button class="navbtn" data-target="threePage">3D 페이지</button><button class="navbtn" data-target="myPage">마이페이지</button></nav><div class="header-actions"><button id="reset" style="display:none">배치 초기화</button></div></header><section class="page active" id="homePage"><div class="content-page"><div class="hero"><div><span class="eyebrow">ROOM'D CURATION</span><h1>좋아하는 물건으로<br>완성하는 나의 공간</h1><p>마음에 드는 소품을 발견하고, 3D 공간에 직접 배치해 보세요.</p><button class="primary" data-go="productPage">소품 구경하기 →</button></div><div class="hero-art">🛋️</div></div><div class="section-title"><h2>카테고리</h2><a href="https://domemall.kr/" target="_blank" rel="noopener">도매몰 둘러보기 ↗</a></div><div class="category-row"><button class="category-tile" data-go="productPage"><span class="emoji">🛋️</span><strong>가구</strong><small>공간의 중심이 되는 아이템</small></button><button class="category-tile" data-go="productPage"><span class="emoji">🏺</span><strong>오브제 · 화병</strong><small>작은 디테일 더하기</small></button><button class="category-tile" data-go="productPage"><span class="emoji">🕯️</span><strong>조명 · 캔들</strong><small>분위기를 바꾸는 빛</small></button><button class="category-tile" data-go="threePage"><span class="emoji">🧩</span><strong>3D 공간 배치</strong><small>내 공간에서 미리 보기</small></button></div><div class="section-title"><h2>룸드 추천 아이템</h2><a href="#" data-go="productPage">상품 더 보기 →</a></div><div class="product-grid"><article class="product-card"><div class="product-art sofa">🛋️</div><div class="product-info"><span class="tag">COLOR POINT</span><h3>옐로우 빈백 소파</h3><p>포근한 패브릭 포인트</p><a href="https://domemall.kr/product/detail.html?product_no=441085&amp;cate_no=27702&amp;display_group=1" target="_blank" rel="noopener">도매몰에서 보기 ↗</a></div></article><article class="product-card"><div class="product-art table">▱</div><div class="product-info"><span class="tag">LIVING</span><h3>거실 좌탁</h3><p>내추럴 우드 스타일</p><a href="https://domemall.kr/product/detail.html?product_no=441102&amp;cate_no=27704&amp;display_group=1" target="_blank" rel="noopener">도매몰에서 보기 ↗</a></div></article><article class="product-card"><div class="product-art vase">🏺</div><div class="product-info"><span class="tag">OBJECT</span><h3>화이트 링 오브제 화병</h3><p>꽃 장식을 더한 오브제</p><a href="https://domemall.kr/product/detail.html?product_no=448804&amp;cate_no=26029&amp;display_group=1" target="_blank" rel="noopener">도매몰에서 보기 ↗</a></div></article><article class="product-card"><div class="product-art candle">🕯️</div><div class="product-info"><span class="tag">MOOD</span><h3>캔들 · 무드 소품</h3><p>감성적인 공간 연출</p><a href="https://domemall.kr/product/detail.html?product_no=449770&cate_no=26072&display_group=1" target="_blank" rel="noopener">도매몰에서 찾기 ↗</a></div></article></div><p class="footnote">상품 카드는 프로토타입용 이미지 아이콘으로 표시했어요. 도매몰 전체 상품을 실시간으로 불러오는 기능은 포함되어 있지 않습니다.</p></div></section><section class="page" id="productPage"><div class="content-page"><span class="eyebrow">SHOP THE LOOK</span><div class="page-heading"><div><h1>상품 페이지</h1><p>공간에 어울리는 아이템을 찾아보세요.</p></div><a class="text-link" href="https://domemall.kr/" target="_blank" rel="noopener">도매몰 전체 보기 ↗</a></div><div class="category-row"><button class="category-tile" data-filter="all"><span class="emoji">✦</span><strong>전체 상품</strong><small>룸드 셀렉션</small></button><button class="category-tile" data-filter="furniture"><span class="emoji">🛋️</span><strong>가구</strong><small>좌탁 · 빈백</small></button><button class="category-tile" data-filter="object"><span class="emoji">🏺</span><strong>오브제</strong><small>화병 · 장식품</small></button><button class="category-tile" data-filter="mood"><span class="emoji">🕯️</span><strong>무드 소품</strong><small>캔들 · 조명</small></button></div><div class="section-title"><h2 id="catalogTitle">추천 상품</h2><span class="text-link">상품 선택 후 도매몰에서 상세 확인</span></div><div class="product-grid" id="catalogGrid"><article class="product-card" data-category="furniture"><div class="product-art sofa">🛋️</div><div class="product-info"><span class="tag">FURNITURE</span><h3>옐로우 빈백 소파</h3><p>편안한 패브릭 체어</p><a href="https://domemall.kr/product/detail.html?product_no=441085&amp;cate_no=27702&amp;display_group=1" target="_blank" rel="noopener">상품 상세 보기 ↗</a></div></article><article class="product-card" data-category="furniture"><div class="product-art table">▱</div><div class="product-info"><span class="tag">FURNITURE</span><h3>거실 좌탁</h3><p>100 × 50cm 스타일 참고</p><a href="https://domemall.kr/product/detail.html?product_no=441102&amp;cate_no=27704&amp;display_group=1" target="_blank" rel="noopener">상품 상세 보기 ↗</a></div></article><article class="product-card" data-category="object"><div class="product-art vase">🏺</div><div class="product-info"><span class="tag">OBJECT</span><h3>화이트 링 오브제 화병</h3><p>플라워 데코 오브제</p><a href="https://domemall.kr/product/detail.html?product_no=448804&amp;cate_no=26029&amp;display_group=1" target="_blank" rel="noopener">상품 상세 보기 ↗</a></div></article><article class="product-card" data-category="mood"><div class="product-art candle">🕯️</div><div class="product-info"><span class="tag">MOOD</span><h3>캔들 · 무드 소품</h3><p>공간 분위기 연출용</p><a href="https://domemall.kr/product/detail.html?product_no=449770&cate_no=26072&display_group=1" target="_blank" rel="noopener">도매몰에서 찾기 ↗</a></div></article></div><p class="footnote">이 페이지는 연결된 상품 3종과 프로토타입용 추천 카드를 보여줍니다. 도매몰의 실제 전체 상품 목록은 <a href="https://m.domemall.kr/product/list.html" target="_blank" rel="noopener">도매몰 상품 목록 ↗</a>에서 확인하세요.</p></div></section><section class="page" id="threePage"><div class="layout"><section class="viewport"><canvas id="view"></canvas><div class="title"><h1>나만의 3D 공간 배치</h1><p>3D 공간에서 가구를 직접 이동해 보세요.</p></div><div class="toolbar"><button id="home">기본 시점</button><button id="zin">＋ 확대</button><button id="zout">－ 축소</button></div><div class="tip">빈 곳 드래그: 시점 회전 · 휠: 확대/축소<br>가구 드래그: 바닥 위 이동 · 더블클릭: 상품 페이지</div><div class="status" id="status">3D 장면 준비 중…</div></section>
 <aside id="products"><h2>공간에 놓인 소품</h2><p>가구를 3D 공간 안에서 이동하고 상품 페이지를 열어볼 수 있어요.</p>
 <div class="item"><div class="icon">🏺</div><div><h3>화이트 링 오브제 화병</h3><p>작아진 미니 사이즈 · 꽃 장식 포함</p><button data-product="vase">상품 보러 가기 ↗</button></div></div>
 <div class="item"><div class="icon">◉</div><div><h3>거실 좌탁</h3><p>공간에 포인트</p><button data-product="table">상품 보러 가기 ↗</button></div></div>
 <div class="item"><div class="icon" style="color:#d5b52c">🛋️</div><div><h3>옐로우 빈백 소파</h3><p>노란색 패브릭 빈백 체어</p><button data-product="beanbag">상품 보러 가기 ↗</button></div></div>
-<div class="rotatebox"><h3>선택한 상품 회전</h3><p id="rotateHint">먼저 3D 화면에서 거실 좌탁·화병·빈백을 클릭하세요.</p><div class="rotateactions"><button id="rotLeft" type="button">↶ −15°</button><button id="rotRight" type="button">+15° ↷</button></div><input id="rotationSlider" type="range" min="0" max="359" step="1" value="0" aria-label="상품 회전 각도"><div class="rotatevalue"><span>0°</span><strong id="rotationValue">0°</strong><span>360°</span></div></div><div class="note">상품을 선택한 뒤 버튼이나 슬라이더로 원하는 방향까지 360° 회전할 수 있어요. 빈 곳을 드래그하면 카메라 시점도 회전합니다.</div></aside></div></section><section class="page" id="myPage"><div class="content-page"><span class="eyebrow">MY ROOM'D</span><div class="page-heading"><div><h1>마이페이지</h1><p>나의 주문과 관심 상품을 한 곳에서 확인해요.</p></div></div>
-<div id="myMain">
-<div class="account-grid"><div class="account-card"><h2 id="loginTitle">로그인이 필요해요</h2><p id="loginDesc">로그인하면 주문 내역과 관심 상품을 편리하게 확인할 수 있어요.</p><div class="login-row"><input type="text" id="loginId" placeholder="아이디" aria-label="아이디"><input type="password" placeholder="비밀번호" aria-label="비밀번호"></div><button class="primary" style="width:100%;margin-top:10px" id="loginDemo">로그인</button><p id="loginMessage">* 데모 화면이며 실제 로그인은 연결되어 있지 않아요.</p></div><div class="info-card"><h2>나의 쇼핑 정보</h2><div class="mypage-menu"><button type="button" class="my-menu-btn" data-my="orders"><b>📦</b>주문/배송 조회</button><button type="button" class="my-menu-btn" data-my="wishlist"><b>♡</b>관심 상품</button><button type="button" class="my-menu-btn" data-my="claims"><b>↩</b>취소/교환/반품</button><button type="button" class="my-menu-btn" data-my="coupons"><b>🎟️</b>쿠폰</button><button type="button" class="my-menu-btn" data-my="inquiries"><b>✉️</b>문의 내역</button><button type="button" class="my-menu-btn" data-my="profile"><b>⚙️</b>회원 정보 수정</button></div></div></div>
-<div class="section-title"><h2>최근 주문</h2><a href="https://domemall.kr/" target="_blank" rel="noopener">도매몰 계정으로 확인 ↗</a></div>
-<div id="recentOrders"></div>
-</div>
-
-<div id="mySub" hidden>
-<button type="button" class="my-back" id="myBack">← 마이페이지로</button>
-<span class="eyebrow" id="subEyebrow"></span><div class="page-heading"><div><h1 id="subTitle"></h1><p id="subDesc"></p></div></div>
-
-<div class="my-panel" data-panel="orders" hidden>
-<div class="status-tabs"><button type="button" class="my-status on" data-status="all">전체</button><button type="button" class="my-status" data-status="0">결제완료</button><button type="button" class="my-status" data-status="1">배송준비</button><button type="button" class="my-status" data-status="2">배송중</button><button type="button" class="my-status" data-status="3">배송완료</button></div>
-<div id="orderList"></div>
-<p class="footnote">예시 주문 데이터예요. 실제 주문은 도매몰 계정에서 확인할 수 있어요.</p>
-</div>
-
-<div class="my-panel" data-panel="wishlist" hidden><div class="product-grid" id="wishGrid"></div><div class="order-empty" id="wishEmpty" hidden>관심 상품이 없어요.</div></div>
-
-<div class="my-panel" data-panel="claims" hidden>
-<form class="my-form" id="claimForm"><label>신청 유형<select name="type"><option>취소</option><option>교환</option><option>반품</option></select></label><label>주문 선택<select name="order" id="claimOrder"></select></label><label>사유<select name="reason"><option>단순 변심</option><option>상품 파손/불량</option><option>오배송</option><option>기타</option></select></label><label>상세 내용<textarea name="memo" rows="4" placeholder="내용을 입력해 주세요"></textarea></label><div class="form-actions"><button class="primary" type="submit">신청하기</button></div><p class="form-msg" id="claimMsg"></p></form>
-<h3 class="sub-h">신청 내역</h3><div id="claimList"></div>
-</div>
-
-<div class="my-panel" data-panel="coupons" hidden>
-<form class="coupon-row" id="couponForm"><input name="code" placeholder="쿠폰 번호 입력" aria-label="쿠폰 번호"><button class="primary" type="submit">등록</button></form><p class="form-msg" id="couponMsg"></p><div id="couponList"></div>
-</div>
-
-<div class="my-panel" data-panel="inquiries" hidden>
-<button type="button" class="primary" id="newInquiryBtn">1:1 문의 작성</button>
-<form class="my-form" id="inquiryForm" hidden><label>문의 유형<select name="kind"><option>상품 문의</option><option>배송 문의</option><option>교환/반품 문의</option><option>기타</option></select></label><label>제목<input name="title" required placeholder="제목을 입력해 주세요"></label><label>내용<textarea name="body" rows="4" required placeholder="문의 내용을 입력해 주세요"></textarea></label><div class="form-actions"><button type="button" id="inquiryCancel">취소</button><button class="primary" type="submit">등록</button></div></form>
-<div id="inquiryList" style="margin-top:14px"></div>
-</div>
-
-<div class="my-panel" data-panel="profile" hidden>
-<form class="my-form" id="profileForm"><label>이름<input name="name"></label><label>이메일<input name="email" type="email"></label><label>휴대폰<input name="phone" type="tel"></label><label>기본 배송지<input name="address"></label><div class="form-actions"><button class="primary" type="submit">저장</button></div><p class="form-msg" id="profileMsg"></p></form>
-</div>
-</div>
-
-<p class="footnote">마이페이지는 UI 시안이며 실제 로그인, 주문 조회, 쿠폰 등은 서버와 연결되지 않았습니다.</p>
-</div></section><script>function showPage(id){document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id===id));document.querySelectorAll('.navbtn').forEach(b=>b.classList.toggle('active',b.dataset.target===id));document.body.classList.toggle('is-home',id==='homePage');document.getElementById('reset').style.display=id==='threePage'?'inline-block':'none';if(id==='threePage')setTimeout(()=>window.dispatchEvent(new Event('resize')),100);window.scrollTo({top:0,behavior:'auto'});}document.querySelectorAll('.navbtn').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.target)));document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.go)));document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{const f=b.dataset.filter;document.querySelectorAll('#catalogGrid [data-category]').forEach(c=>c.style.display=(f==='all'||c.dataset.category===f)?'':'none');document.getElementById('catalogTitle').textContent=({all:'추천 상품',furniture:'가구',object:'오브제',mood:'무드 소품'})[f];}));// My page interactions (demo data only; nothing is sent to a server)
-(function(){
-const $=id=>document.getElementById(id);
-const esc=s=>{const d=document.createElement('div');d.textContent=String(s);return d.innerHTML};
-const today=()=>{const d=new Date();return d.getFullYear()+'.'+String(d.getMonth()+1).padStart(2,'0')+'.'+String(d.getDate()).padStart(2,'0')};
-const STEPS=['결제완료','배송준비','배송중','배송완료'];
-const META={
- orders:['ORDER & DELIVERY','주문/배송 조회','주문 상태를 확인하고 배송 진행 상황을 볼 수 있어요.'],
- wishlist:['WISHLIST','관심 상품','마음에 드는 소품을 모아 두었어요.'],
- claims:['CANCEL · EXCHANGE · RETURN','취소/교환/반품','신청 후 접수 상태를 확인할 수 있어요.'],
- coupons:['COUPON','쿠폰','보유한 쿠폰을 확인하고 새 쿠폰을 등록할 수 있어요.'],
- inquiries:['INQUIRY','문의 내역','궁금한 점을 남기면 답변을 받을 수 있어요.'],
- profile:['PROFILE','회원 정보 수정','기본 정보와 배송지를 수정할 수 있어요.']
-};
-const orders=[
- {id:'RD-DEMO-003',date:'2026.10.22',name:'캔들 · 무드 소품',icon:'🕯️',status:0,delivery:'출고 준비 중이에요.'},
- {id:'RD-DEMO-001',date:'2026.10.18',name:'화이트 링 오브제 화병',icon:'🏺',status:2,delivery:'택배 배송 중 · 송장번호 예시 0000-0000'},
- {id:'RD-DEMO-002',date:'2026.10.10',name:'거실 좌탁',icon:'▱',status:3,delivery:'택배 배송 완료'}
-];
-const wishes=[
- {art:'sofa',icon:'🛋️',tag:'FURNITURE',name:'옐로우 빈백 소파',desc:'포근한 패브릭 체어',url:'https://domemall.kr/product/detail.html?product_no=441085&cate_no=27702&display_group=1',three:'beanbag'},
- {art:'table',icon:'▱',tag:'FURNITURE',name:'거실 좌탁',desc:'내추럴 우드 스타일',url:'https://domemall.kr/product/detail.html?product_no=441102&cate_no=27704&display_group=1',three:'table'},
- {art:'vase',icon:'🏺',tag:'OBJECT',name:'화이트 링 오브제 화병',desc:'꽃 장식을 더한 오브제',url:'https://domemall.kr/product/detail.html?product_no=448804&cate_no=26029&display_group=1',three:'vase'},
- {art:'candle',icon:'🕯️',tag:'MOOD',name:'캔들 · 무드 소품',desc:'감성적인 공간 연출',url:'https://domemall.kr/product/detail.html?product_no=449770&cate_no=26072&display_group=1'}
-];
-const claims=[];
-const coupons=[
- {code:'WELCOME10',name:'첫 구매 10% 할인',exp:'2026.12.31까지'},
- {code:'FREESHIP',name:'무료배송 쿠폰',exp:'2026.11.30까지'}
-];
-const inquiries=[
- {title:'배송 일정이 궁금해요',kind:'배송 문의',date:'2026.10.20',status:'답변완료',answer:'예시 답변이에요. 영업일 기준 2~3일 내 출고돼요.'}
-];
-let orderFilter='all';
-
-function renderOrders(){
- const list=orders.filter(o=>orderFilter==='all'||o.status===Number(orderFilter));
- $('orderList').innerHTML=list.length?list.map(o=>`
-  <div class="order-card" data-oid="${esc(o.id)}">
-   <div class="order-head"><span>${esc(o.date)} · ${esc(o.id)}</span><span class="chip">${STEPS[o.status]}</span></div>
-   <div class="order-title">${o.icon} ${esc(o.name)}</div>
-   <div class="steps">${STEPS.map((s,i)=>`<span class="${i<=o.status?'done':''}">${s}</span>`).join('')}</div>
-   <div class="order-detail">
-    <div>배송 정보 · ${esc(o.delivery)}</div>
-    <div class="order-actions"><button type="button" data-claim="${esc(o.id)}">교환/반품 신청</button></div>
-   </div>
-  </div>`).join(''):'<div class="order-empty">해당 상태의 주문이 없어요.</div>';
-}
-function renderRecent(){
- const o=orders[0];
- $('recentOrders').innerHTML=`<div class="list-card" style="cursor:pointer" data-my="orders"><div class="order-head"><span>${esc(o.date)} · ${esc(o.id)}</span><span class="chip">${STEPS[o.status]}</span></div><div class="order-title" style="font-size:14px">${o.icon} ${esc(o.name)}</div><div style="font-size:12px;color:#95877e">눌러서 전체 주문 보기 →</div></div>`;
-}
-function renderWishes(){
- $('wishGrid').innerHTML=wishes.map((w,i)=>`
-  <article class="product-card"><div class="product-art ${w.art}">${w.icon}</div>
-   <div class="product-info"><span class="tag">${w.tag}</span><h3>${esc(w.name)}</h3><p>${esc(w.desc)}</p>
-    <div class="wish-actions"><a href="${w.url}" target="_blank" rel="noopener">도매몰에서 보기 ↗</a>${w.three?`<button type="button" data-three="1">3D에 놓아 보기</button>`:''}<button type="button" data-unwish="${i}">찜 해제</button></div>
-   </div></article>`).join('');
- $('wishEmpty').hidden=wishes.length>0;
-}
-function renderClaims(){
- $('claimList').innerHTML=claims.length?claims.map(c=>`
-  <div class="list-card"><div class="order-head"><span>${esc(c.date)} · ${esc(c.order)}</span><span class="chip">${esc(c.status)}</span></div>
-   <div class="order-title" style="font-size:14px">${esc(c.type)} 신청 · ${esc(c.reason)}</div>
-   <div style="font-size:13px;color:#6d6259">${esc(c.memo||'상세 내용 없음')}</div></div>`).join(''):'<div class="order-empty">신청 내역이 없어요.</div>';
-}
-function fillClaimOrders(){
- $('claimOrder').innerHTML=orders.map(o=>`<option value="${esc(o.id)}">${esc(o.name)} (${esc(o.id)})</option>`).join('');
-}
-function renderCoupons(){
- $('couponList').innerHTML=coupons.map(c=>`
-  <div class="list-card coupon-card"><div><b>${esc(c.name)}</b><small>${esc(c.exp)}</small></div><span class="chip">사용 가능</span></div>`).join('');
-}
-function renderInquiries(){
- $('inquiryList').innerHTML=inquiries.map((q,i)=>`
-  <div class="list-card inquiry-item" data-inq="${i}"><div class="order-head"><span>${esc(q.date)} · ${esc(q.kind)}</span><span class="chip">${esc(q.status)}</span></div>
-   <div class="order-title" style="font-size:14px">${esc(q.title)}</div>
-   <div class="inquiry-ans">${q.answer?esc(q.answer):'답변을 기다리고 있어요. 영업일 기준 1~2일 내 답변드릴게요.'}</div></div>`).join('');
-}
-
-function showMy(panel){
- $('myMain').hidden=!!panel;
- $('mySub').hidden=!panel;
- if(!panel)return;
- document.querySelectorAll('.my-panel').forEach(el=>{el.hidden=el.dataset.panel!==panel});
- const m=META[panel];
- $('subEyebrow').textContent=m[0];$('subTitle').textContent=m[1];$('subDesc').textContent=m[2];
- window.scrollTo({top:0,behavior:'smooth'});
-}
-function openClaim(orderId){
- showMy('claims');
- $('claimOrder').value=orderId;
- $('claimMsg').textContent='';
-}
-
-$('myPage').addEventListener('click',e=>{
- const t=e.target;
- const my=t.closest('[data-my]');if(my){showMy(my.dataset.my);return}
- if(t.id==='myBack'){showMy(null);return}
- const st=t.closest('.my-status');if(st){orderFilter=st.dataset.status;document.querySelectorAll('.my-status').forEach(b=>b.classList.toggle('on',b===st));renderOrders();return}
- const cl=t.closest('[data-claim]');if(cl){openClaim(cl.dataset.claim);return}
- const card=t.closest('.order-card');if(card){card.classList.toggle('open');return}
- const th=t.closest('[data-three]');if(th){showPage('threePage');return}
- const uw=t.closest('[data-unwish]');if(uw){wishes.splice(Number(uw.dataset.unwish),1);renderWishes();return}
- const inq=t.closest('.inquiry-item');if(inq){inq.classList.toggle('open');return}
-});
-
-$('claimForm').addEventListener('submit',e=>{
- e.preventDefault();const f=e.target;
- claims.unshift({type:f.type.value,order:f.order.value,reason:f.reason.value,memo:f.memo.value.trim(),date:today(),status:'접수 완료'});
- f.memo.value='';
- $('claimMsg').textContent='신청이 접수됐어요. 처리 상태는 아래 신청 내역에서 확인할 수 있어요. (데모)';
- renderClaims();
-});
-
-$('couponForm').addEventListener('submit',e=>{
- e.preventDefault();const f=e.target;
- const code=f.code.value.trim().toUpperCase();
- if(!code){$('couponMsg').textContent='쿠폰 번호를 입력해 주세요.';return}
- if(coupons.some(c=>c.code===code)){$('couponMsg').textContent='이미 등록된 쿠폰이에요.';return}
- if(code==='ROOMD2026'){
-  coupons.unshift({code,name:'신규 회원 5,000원 할인',exp:'2026.12.31까지'});
-  $('couponMsg').textContent='쿠폰이 등록됐어요. (데모)';renderCoupons();f.code.value='';
- }else{
-  $('couponMsg').textContent='등록할 수 없는 쿠폰 번호예요. (데모 쿠폰: ROOMD2026)';
- }
-});
-
-$('newInquiryBtn').addEventListener('click',()=>{$('inquiryForm').hidden=false;$('newInquiryBtn').hidden=true;});
-$('inquiryCancel').addEventListener('click',()=>{$('inquiryForm').hidden=true;$('newInquiryBtn').hidden=false;$('inquiryForm').reset();});
-$('inquiryForm').addEventListener('submit',e=>{
- e.preventDefault();const f=e.target;
- inquiries.unshift({title:f.title.value.trim(),kind:f.kind.value,date:today(),status:'답변 대기',answer:''});
- f.reset();f.hidden=true;$('newInquiryBtn').hidden=false;
- renderInquiries();
-});
-
-$('profileForm').addEventListener('submit',e=>{
- e.preventDefault();
- $('profileMsg').textContent='저장됐어요. (데모: 서버에는 저장되지 않아요)';
-});
-
-let loggedIn=false;
-$('loginDemo').addEventListener('click',()=>{
- if(loggedIn){
-  loggedIn=false;
-  $('loginTitle').textContent='로그인이 필요해요';
-  $('loginDesc').textContent='로그인하면 주문 내역과 관심 상품을 편리하게 확인할 수 있어요.';
-  $('loginDemo').textContent='로그인';
-  $('loginId').value='';
-  $('loginMessage').textContent='로그아웃했어요.';
-  return;
- }
- const id=$('loginId').value.trim();
- if(!id){$('loginMessage').textContent='아이디를 입력해 주세요. (데모)';return}
- loggedIn=true;
- $('loginTitle').textContent=id+'님, 환영해요';
- $('loginDesc').textContent='주문과 관심 상품을 바로 확인할 수 있어요.';
- $('loginDemo').textContent='로그아웃';
- $('loginMessage').textContent='* 데모 로그인이에요. 실제 인증은 연결되어 있지 않아요.';
-});
-
-renderOrders();renderRecent();fillClaimOrders();renderClaims();renderWishes();renderCoupons();renderInquiries();showMy(null);
-})();
-</script><script type="importmap">
+<div class="rotatebox"><h3>선택한 상품 회전</h3><p id="rotateHint">먼저 3D 화면에서 거실 좌탁·화병·빈백을 클릭하세요.</p><div class="rotateactions"><button id="rotLeft" type="button">↶ −15°</button><button id="rotRight" type="button">+15° ↷</button></div><input id="rotationSlider" type="range" min="0" max="359" step="1" value="0" aria-label="상품 회전 각도"><div class="rotatevalue"><span>0°</span><strong id="rotationValue">0°</strong><span>360°</span></div></div><div class="note">상품을 선택한 뒤 버튼이나 슬라이더로 원하는 방향까지 360° 회전할 수 있어요. 빈 곳을 드래그하면 카메라 시점도 회전합니다.</div></aside></div></section><section class="page" id="myPage"><div class="content-page"><span class="eyebrow">MY ROOM'D</span><div class="page-heading"><div><h1>마이페이지</h1><p>나의 주문과 관심 상품을 한 곳에서 확인해요.</p></div></div><div class="account-grid"><div class="account-card"><h2>로그인이 필요해요</h2><p>로그인하면 주문 내역과 관심 상품을 편리하게 확인할 수 있어요.</p><div class="login-row"><input type="text" placeholder="아이디" aria-label="아이디"><input type="password" placeholder="비밀번호" aria-label="비밀번호"></div><button class="primary" style="width:100%;margin-top:10px" id="loginDemo">로그인</button><p id="loginMessage">* 데모 화면이며 실제 로그인은 연결되어 있지 않아요.</p></div><div class="info-card"><h2>나의 쇼핑 정보</h2><div class="mypage-menu"><div><b>📦</b>주문/배송 조회</div><div><b>♡</b>관심 상품</div><div><b>↩</b>취소/교환/반품</div><div><b>🎟️</b>쿠폰</div><div><b>✉️</b>문의 내역</div><div><b>⚙️</b>회원 정보 수정</div></div></div></div><div class="section-title"><h2>최근 주문</h2><a href="https://domemall.kr/" target="_blank" rel="noopener">도매몰 계정으로 확인 ↗</a></div><div class="order-empty">아직 표시할 주문 내역이 없어요.<br>실제 주문 정보는 도매몰 로그인 후 확인할 수 있어요.</div><p class="footnote">마이페이지는 UI 시안이며 실제 로그인, 주문 조회, 쿠폰 등은 서버와 연결되지 않았습니다.</p></div></section><script>function showPage(id){document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id===id));document.querySelectorAll('.navbtn').forEach(b=>b.classList.toggle('active',b.dataset.target===id));document.getElementById('reset').style.display=id==='threePage'?'inline-block':'none';if(id==='threePage')setTimeout(()=>window.dispatchEvent(new Event('resize')),100);window.scrollTo({top:0,behavior:'smooth'});}document.querySelectorAll('.navbtn').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.target)));document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.go)));document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{const f=b.dataset.filter;document.querySelectorAll('#catalogGrid [data-category]').forEach(c=>c.style.display=(f==='all'||c.dataset.category===f)?'':'none');document.getElementById('catalogTitle').textContent=({all:'추천 상품',furniture:'가구',object:'오브제',mood:'무드 소품'})[f];}));document.getElementById('loginDemo').addEventListener('click',()=>document.getElementById('loginMessage').textContent='이 화면은 데모예요. 실제 로그인은 도매몰에서 진행해 주세요.');</script><script type="importmap">
 {
   "imports": {
     "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
@@ -446,107 +303,38 @@ renderOrders();renderRecent();fillClaimOrders();renderClaims();renderWishes();re
 <script type="module">
 import * as THREE from 'three';
 import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
-import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
-import {RoundedBoxGeometry} from 'three/addons/geometries/RoundedBoxGeometry.js';
-
 const canvas=document.querySelector('#view'),status=document.querySelector('#status');
-const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)').matches;
-const TAU=Math.PI*2;
-
-const renderer=new THREE.WebGLRenderer({canvas,antialias:true,powerPreference:'high-performance'});
-renderer.setPixelRatio(Math.min(devicePixelRatio,2));
-renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;
-renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.05;
-
-const scene=new THREE.Scene();scene.background=new THREE.Color('#e8e9e1');
-// Image-based lighting from a neutral studio room: real reflections and soft bounce light on every surface.
-const pmrem=new THREE.PMREMGenerator(renderer);
-scene.environment=pmrem.fromScene(new RoomEnvironment(),.04).texture;
-
-const camera=new THREE.PerspectiveCamera(42,1,.1,100);camera.position.set(7.8,6.5,9.5);
+const renderer=new THREE.WebGLRenderer({canvas,antialias:true});renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.1;
+const scene=new THREE.Scene();scene.background=new THREE.Color('#e8e9e1');const camera=new THREE.PerspectiveCamera(42,1,.1,100);camera.position.set(7.8,6.5,9.5);
 const controls=new OrbitControls(camera,canvas);controls.target.set(0,1,0);controls.enableDamping=true;controls.maxPolarAngle=Math.PI*.48;controls.minDistance=4.5;controls.maxDistance=18;
-
-scene.add(new THREE.HemisphereLight(0xffffff,0xb9b8a9,.5));
-// Warm sun through the window. Its position drifts slowly so the shadows move like real daylight.
-const sun=new THREE.DirectionalLight(0xffe2b8,2.6);
-sun.castShadow=true;sun.shadow.mapSize.set(2048,2048);
-Object.assign(sun.shadow.camera,{left:-7,right:7,top:7,bottom:-7,near:1,far:40});sun.shadow.camera.updateProjectionMatrix();
-sun.shadow.bias=-.0004;sun.shadow.normalBias=.03;
-sun.target.position.set(0,0,0);scene.add(sun,sun.target);
-
-function canvasTexture(size,draw){const c=document.createElement('canvas');c.width=c.height=size;draw(c.getContext('2d'),size);const t=new THREE.CanvasTexture(c);t.colorSpace=THREE.SRGBColorSpace;t.anisotropy=8;return t}
-// Oak floorboards: grain lines, per-board tone, plank seams.
-const floorTex=canvasTexture(1024,(g,s)=>{
- const boardH=s/4;
- for(let b=0;b<4;b++){
-  const r=(Math.random()-.5)*16;
-  g.fillStyle=`rgb(${196+r},${160+r},${118+r})`;g.fillRect(0,b*boardH,s,boardH);
-  for(let i=0;i<70;i++){
-   const y=b*boardH+Math.random()*boardH;
-   g.strokeStyle=`rgba(${120+Math.random()*30},${84+Math.random()*20},46,${.05+Math.random()*.12})`;
-   g.lineWidth=.6+Math.random()*2.2;g.beginPath();g.moveTo(0,y);
-   for(let x=0;x<=s;x+=24)g.lineTo(x,y+Math.sin(x*.008+i)*1.8+(Math.random()-.5)*.8);
-   g.stroke();
-  }
-  g.fillStyle='rgba(70,45,25,.55)';g.fillRect(0,b*boardH,s,2);
-  for(let x=(b*397)%s;x<s;x+=s/2)g.fillRect(x,b*boardH,2,boardH);
- }
-});
-floorTex.wrapS=floorTex.wrapT=THREE.RepeatWrapping;floorTex.repeat.set(3,2.4);
-// Soft plaster noise for the walls.
-const plasterTex=canvasTexture(256,(g,s)=>{
- g.fillStyle='#f5f3eb';g.fillRect(0,0,s,s);
- const img=g.getImageData(0,0,s,s);
- for(let i=0;i<img.data.length;i+=4){const n=(Math.random()-.5)*7;img.data[i]+=n;img.data[i+1]+=n;img.data[i+2]+=n}
- g.putImageData(img,0,0);
-});
-plasterTex.wrapS=plasterTex.wrapT=THREE.RepeatWrapping;plasterTex.repeat.set(4,3);
-
-const material=(c,r=.8,extra={})=>new THREE.MeshStandardMaterial({color:c,roughness:r,...extra});
-const fabric=(c,r=.95)=>new THREE.MeshPhysicalMaterial({color:c,roughness:r,sheen:.6,sheenRoughness:.55,sheenColor:new THREE.Color('#fff3c4')});
-const mats={wall:new THREE.MeshStandardMaterial({color:'#ffffff',map:plasterTex,roughness:.95}),side:new THREE.MeshStandardMaterial({color:'#ffffff',map:plasterTex,roughness:.95}),floor:new THREE.MeshStandardMaterial({color:'#ffffff',map:floorTex,roughness:.5}),white:material('#fff',.5),sage:material('#c7cbbb'),sage2:material('#adb5a2'),cream:material('#e9e0d1'),wood:material('#a88e70',.6),wood2:material('#c4ad8f'),green:material('#87977d'),pot:material('#c5b19a')};
-
-// Soft-edged boxes read far more like real furniture and walls than hard cubes.
-function box(parent,n,w,h,d,m,x,y,z){const o=new THREE.Mesh(new RoundedBoxGeometry(w,h,d,3,Math.min(w,h,d)*.2),m);o.name=n;o.position.set(x,y,z);o.castShadow=true;o.receiveShadow=true;parent.add(o);return o}
+scene.add(new THREE.HemisphereLight(0xffffff,0xb9b8a9,2));const light=new THREE.DirectionalLight(0xfff4df,3);light.position.set(-4,9,6);light.castShadow=true;light.shadow.mapSize.set(2048,2048);scene.add(light);
+const material=(c,r=.8)=>new THREE.MeshStandardMaterial({color:c,roughness:r});
+const mats={wall:material('#f5f3eb'),side:material('#e2e1d7'),floor:material('#dedbcf'),white:material('#fff'),sage:material('#c7cbbb'),sage2:material('#adb5a2'),cream:material('#e9e0d1'),wood:material('#a88e70'),wood2:material('#c4ad8f'),green:material('#87977d'),pot:material('#c5b19a')};
+function box(parent,n,w,h,d,m,x,y,z){let o=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),m);o.name=n;o.position.set(x,y,z);o.castShadow=true;o.receiveShadow=true;parent.add(o);return o}
 function cyl(parent,n,rt,rb,h,m,x,y,z){let o=new THREE.Mesh(new THREE.CylinderGeometry(rt,rb,h,32),m);o.name=n;o.position.set(x,y,z);o.castShadow=true;o.receiveShadow=true;parent.add(o);return o}
 function sphere(parent,n,sx,sy,sz,m,x,y,z){let o=new THREE.Mesh(new THREE.SphereGeometry(1,24,16),m);o.name=n;o.scale.set(sx,sy,sz);o.position.set(x,y,z);o.castShadow=true;parent.add(o);return o}
-
 // Open-front room with real perspective and depth.
 box(scene,'floor',8,.16,6,mats.floor,0,-.08,0);box(scene,'back wall',8,4,.16,mats.wall,0,2,-3);box(scene,'left wall',.16,4,6,mats.side,-4,2,0);
-
-const win=new THREE.Group();win.position.set(-2.55,2.55,-2.89);scene.add(win);
-box(win,'window glass',1.65,1.65,.025,material('#dce8e5',.15,{emissive:'#fff4e0',emissiveIntensity:.55}),0,0,0);
+for(let z=-2.5;z<2.8;z+=.65)box(scene,'floor seam',7.96,.008,.012,material('#d1cec3'),0,.006,z);
+const win=new THREE.Group();win.position.set(-2.55,2.55,-2.89);scene.add(win);box(win,'window glass',1.65,1.65,.025,material('#dce8e5',.35),0,0,0);
 for(const [x,y,w,h] of [[-.86,0,.1,1.85],[.86,0,.1,1.85],[0,.86,1.82,.1],[0,-.86,1.82,.1],[0,0,.07,1.65]])box(win,'window frame',w,h,.08,mats.white,x,y,.04);
 box(win,'window cross',1.65,.07,.08,mats.white,0,0,.04);
-
 function art(x,y,w,h,cols,angle){const g=new THREE.Group();g.position.set(x,y,-2.88);g.rotation.z=angle;scene.add(g);box(g,'picture frame',w,h,.08,mats.white,0,0,0);box(g,'picture canvas',w-.12,h-.12,.025,material(cols[0]),0,0,.05);let stripe=box(g,'art stripe',w-.18,.28,.03,material(cols[1]),0,.12,.075);stripe.rotation.z=-.58;let stripe2=box(g,'art stripe',w-.18,.24,.03,material(cols[2]),0,-.34,.076);stripe2.rotation.z=-.58}
 art(.75,2.75,1.15,1.5,['#d9d9c9','#aab49f','#e7d8c5'],-.02);art(2.05,2.65,.86,1.2,['#e6dfd1','#a7b09d','#d1d1c3'],.035);
-
-const rug=new THREE.Mesh(new THREE.CylinderGeometry(2.05,2.05,.035,64),material('#d1cec3',1));rug.scale.z=.58;rug.position.set(.2,.025,.75);rug.receiveShadow=true;scene.add(rug);
-const ring=new THREE.Mesh(new THREE.TorusGeometry(1.88,.012,8,80),material('#bcb9ae'));ring.rotation.x=Math.PI/2;ring.scale.set(1,.58,1);ring.position.set(.2,.048,.75);scene.add(ring);
-
-// Contact shadow: a soft dark pool under each object so it sits on the floor instead of floating.
-const aoTex=canvasTexture(128,(g,s)=>{const gr=g.createRadialGradient(s/2,s/2,0,s/2,s/2,s/2);gr.addColorStop(0,'rgba(0,0,0,.42)');gr.addColorStop(.6,'rgba(0,0,0,.16)');gr.addColorStop(1,'rgba(0,0,0,0)');g.fillStyle=gr;g.fillRect(0,0,s,s)});
-function contactShadow(parent,x,z,w,d){const m=new THREE.Mesh(new THREE.PlaneGeometry(w,d),new THREE.MeshBasicMaterial({map:aoTex,transparent:true,depthWrite:false}));m.rotation.x=-Math.PI/2;m.position.set(x,.012,z);parent.add(m);return m}
-
-const sofa=new THREE.Group();sofa.position.set(.15,0,-1.7);scene.add(sofa);
-box(sofa,'sofa back',2.8,.95,.58,mats.sage,0,.92,0);box(sofa,'sofa seat',3,.34,.92,material('#d7d8ce',.9),0,.48,.3);box(sofa,'arm',.32,.72,.82,mats.sage2,-1.34,.66,.28);box(sofa,'arm',.32,.72,.82,mats.sage2,1.34,.66,.28);
-box(sofa,'cushion',.55,.48,.16,mats.cream,-.68,.88,.29).rotation.z=-.12;box(sofa,'cushion',.55,.48,.16,mats.sage2,.62,.88,.29).rotation.z=.1;
-contactShadow(scene,.15,-1.7,3.6,1.7);
-
-// Living-room low table modeled from the supplied reference: 100 x 50 cm top, 42 cm total height.
+const rug=new THREE.Mesh(new THREE.CylinderGeometry(2.05,2.05,.035,64),material('#d1cec3'));rug.scale.z=.58;rug.position.set(.2,.025,.75);rug.receiveShadow=true;scene.add(rug);const ring=new THREE.Mesh(new THREE.TorusGeometry(1.88,.012,8,80),material('#bcb9ae'));ring.rotation.x=Math.PI/2;ring.scale.set(1,.58,1);ring.position.set(.2,.048,.75);scene.add(ring);
+const sofa=new THREE.Group();sofa.position.set(.15,0,-1.7);scene.add(sofa);box(sofa,'sofa back',2.8,.95,.58,mats.sage,0,.92,0);box(sofa,'sofa seat',3,.34,.92,material('#d7d8ce'),0,.48,.3);box(sofa,'arm',.32,.72,.82,mats.sage2,-1.34,.66,.28);box(sofa,'arm',.32,.72,.82,mats.sage2,1.34,.66,.28);box(sofa,'cushion',.55,.48,.16,mats.cream,-.68,.88,.29).rotation.z=-.12;box(sofa,'cushion',.55,.48,.16,mats.sage2,.62,.88,.29).rotation.z=.1;
+const chair=new THREE.Group();chair.name='chair';chair.userData.draggable=true; // removed from the 3D scene per user request
 const table=new THREE.Group();table.name='table';table.userData.draggable=true;table.position.set(.25,0,1.05);table.scale.set(1.22,1.22,1.22);scene.add(table);
+// Living-room low table modeled from the supplied reference: 100 x 50 cm top, 42 cm total height.
+// Rounded rectangular top, thin 2 cm slab, and four tapered, slightly splayed wooden legs.
 const topShape=new THREE.Shape();const tw=1.0,td=.5,cr=.095;
 topShape.moveTo(-tw/2+cr,-td/2);topShape.lineTo(tw/2-cr,-td/2);topShape.quadraticCurveTo(tw/2,-td/2,tw/2,-td/2+cr);topShape.lineTo(tw/2,td/2-cr);topShape.quadraticCurveTo(tw/2,td/2,tw/2-cr,td/2);topShape.lineTo(-tw/2+cr,td/2);topShape.quadraticCurveTo(-tw/2,td/2,-tw/2,td/2-cr);topShape.lineTo(-tw/2,-td/2+cr);topShape.quadraticCurveTo(-tw/2,-td/2,-tw/2+cr,-td/2);
-const topGeo=new THREE.ExtrudeGeometry(topShape,{depth:.04,bevelEnabled:true,bevelSegments:2,steps:1,bevelSize:.012,bevelThickness:.008,curveSegments:8});topGeo.rotateX(-Math.PI/2);topGeo.translate(0,.42,0);
-const topMesh=new THREE.Mesh(topGeo,material('#f2f0e9',.42));topMesh.name='거실 좌탁 상판';topMesh.castShadow=true;topMesh.receiveShadow=true;table.add(topMesh);
+const topGeo=new THREE.ExtrudeGeometry(topShape,{depth:.04,bevelEnabled:true,bevelSegments:2,steps:1,bevelSize:.012,bevelThickness:.008,curveSegments:8});topGeo.rotateX(-Math.PI/2);topGeo.translate(0,.42,0);const topMesh=new THREE.Mesh(topGeo,material('#f2f0e9',.48));topMesh.name='거실 좌탁 상판';topMesh.castShadow=true;topMesh.receiveShadow=true;table.add(topMesh);
 function taperedLeg(parent,name,start,end){const a=new THREE.Vector3(...start),b=new THREE.Vector3(...end),dir=new THREE.Vector3().subVectors(b,a);const mesh=new THREE.Mesh(new THREE.CylinderGeometry(.035,.055,dir.length(),16),mats.wood);mesh.name=name;mesh.position.copy(a).add(b).multiplyScalar(.5);mesh.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),dir.normalize());mesh.castShadow=true;mesh.receiveShadow=true;parent.add(mesh)}
 for(const x of [-.37,.37])for(const z of [-.17,.17])taperedLeg(table,'거실 좌탁 원목 다리',[x,.40,z],[x+Math.sign(x)*.075,.025,z+Math.sign(z)*.045]);
-contactShadow(table,0,0,1.25,.7);
-
 // Product-inspired ring vase: 22 cm wide x 23.5 cm tall, with a central opening.
 const vase=new THREE.Group();vase.name='vase';vase.userData.draggable=true;vase.position.set(1.25,0,-.72);vase.scale.setScalar(.72);scene.add(vase);
-const ceramic=new THREE.MeshPhysicalMaterial({color:'#d9ddd9',roughness:.28,clearcoat:.7,clearcoatRoughness:.15});
+const ceramic=material('#d9ddd9',.38);
 const silhouette=new THREE.Shape();
 silhouette.moveTo(-.72,.02);
 silhouette.bezierCurveTo(-1.12,.22,-1.10,.68,-1.00,1.03);
@@ -563,9 +351,9 @@ const opening=new THREE.Path();opening.absellipse(0,.88,.48,.48,0,Math.PI*2,true
 const vaseGeo=new THREE.ExtrudeGeometry(silhouette,{depth:.16,bevelEnabled:true,bevelSegments:3,steps:1,bevelSize:.035,bevelThickness:.035,curveSegments:32});
 vaseGeo.computeVertexNormals();
 const vaseBody=new THREE.Mesh(vaseGeo,ceramic);vaseBody.position.y=.05;vaseBody.castShadow=true;vaseBody.receiveShadow=true;vase.add(vaseBody);
+// Small narrow neck opening, matching the reference silhouette.
 const neckRim=new THREE.Mesh(new THREE.TorusGeometry(.135,.026,12,36),ceramic);neckRim.rotation.x=Math.PI/2;neckRim.position.set(0,2.24,.08);neckRim.castShadow=true;vase.add(neckRim);
-contactShadow(vase,0,0,1.9,1.9);
-// A small airy bouquet: stems emerge from the open neck and sway gently in the idle animation.
+// A small airy bouquet: stems emerge from the open neck, with soft spring flowers.
 const bouquet=new THREE.Group();bouquet.name='flowers';vase.add(bouquet);
 const stemMat=material('#718768',.82), leafMat=material('#879b79',.72);
 function flowerStem(x,z,h,lean){const start=new THREE.Vector3(x,2.22,z),end=new THREE.Vector3(x+lean,2.22+h,z);const dir=end.clone().sub(start);const stem=new THREE.Mesh(new THREE.CylinderGeometry(.018,.024,dir.length(),8),stemMat);stem.position.copy(start).add(end).multiplyScalar(.5);stem.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),dir.clone().normalize());stem.castShadow=true;bouquet.add(stem);
@@ -575,195 +363,44 @@ for(let i=0;i<5;i++){const a=i*Math.PI*2/5;const petal=sphere(head,'soft flower 
 }
 flowerStem(-.12,-.02,.92,-.13);flowerStem(.04,.045,1.18,.08);flowerStem(.15,-.015,.98,.17);flowerStem(-.23,.035,.78,-.2);flowerStem(.24,.04,.82,.12);
 
-// Yellow beanbag chair: soft rounded body, deep seat, raised bolsters, fabric carry loop.
+
+// Yellow beanbag chair inspired by the user's reference photo: soft rounded body,
+// deep recessed seat, raised side/back bolsters, and a small fabric carry loop.
 const beanbag=new THREE.Group();beanbag.name='beanbag';beanbag.userData.draggable=true;beanbag.position.set(-1.15,0,-.25);scene.add(beanbag);
-const yellow=fabric('#e6c83d'),yellowLight=fabric('#f0d956'),yellowShade=fabric('#c6a92c');
+const yellow=material('#e6c83d',.96), yellowLight=material('#f0d956',.98), yellowShade=material('#c6a92c',1);
 function softBlob(parent,name,sx,sy,sz,mat,x,y,z,rot=0){
  const m=new THREE.Mesh(new THREE.SphereGeometry(1,32,24),mat);m.name=name;m.scale.set(sx,sy,sz);m.position.set(x,y,z);m.rotation.z=rot;m.castShadow=true;m.receiveShadow=true;parent.add(m);return m;
 }
+// Wide, low, cushion-like base and plump surrounding back/arms
 softBlob(beanbag,'beanbag base',.82,.28,.68,yellowShade,0,.28,0);
 softBlob(beanbag,'beanbag front cushion',.78,.46,.57,yellowLight,0,.48,.13);
 softBlob(beanbag,'beanbag left bolster',.28,.66,.59,yellow,-.56,.64,-.03,-.18);
 softBlob(beanbag,'beanbag right bolster',.28,.66,.59,yellow,.56,.64,-.03,.18);
 softBlob(beanbag,'beanbag back cushion',.62,.73,.32,yellowLight,0,.75,-.37);
 softBlob(beanbag,'beanbag seat depression',.47,.13,.39,yellowShade,0,.69,-.02);
+// Soft inner seat surface, brighter than the recessed seam to read as a hollow seat
 softBlob(beanbag,'beanbag inner seat',.42,.10,.34,yellowLight,0,.72,.015);
-const handle=new THREE.Mesh(new THREE.TorusGeometry(.105,.035,10,24,Math.PI),fabric('#c8ac2e',.98));
+// small fabric loop at the top/back
+const handleMat=material('#c8ac2e',.98);
+const handle=new THREE.Mesh(new THREE.TorusGeometry(.105,.035,10,24,Math.PI),handleMat);
 handle.name='fabric carry handle';handle.position.set(0,1.43,-.48);handle.rotation.set(Math.PI/2,0,0);handle.scale.set(1,1.35,1);handle.castShadow=true;beanbag.add(handle);
-contactShadow(beanbag,0,0,2,1.7);
 
 const urls={vase:'https://domemall.kr/product/detail.html?product_no=448804&cate_no=26029&display_group=1',table:'https://domemall.kr/product/detail.html?product_no=441102&cate_no=27704&display_group=1',beanbag:'https://domemall.kr/product/detail.html?product_no=441085&cate_no=27702&display_group=1'};
-const labels={table:'거실 좌탁',vase:'화병',beanbag:'옐로우 빈백 소파'};
-const draggables=[table,vase,beanbag];
-for(const d of draggables){d.userData.targetRot=0;d.userData.lift=0}
-
-// Floating dust motes caught in the window light.
-const dustCount=160,dustPos=new Float32Array(dustCount*3),dustSpeed=new Float32Array(dustCount);
-for(let i=0;i<dustCount;i++){dustPos[i*3]=(Math.random()-.5)*7;dustPos[i*3+1]=Math.random()*3.6;dustPos[i*3+2]=(Math.random()-.5)*5;dustSpeed[i]=.4+Math.random()*.8}
-const dustGeo=new THREE.BufferGeometry();dustGeo.setAttribute('position',new THREE.BufferAttribute(dustPos,3));
-const dustTex=canvasTexture(64,(g,s)=>{const gr=g.createRadialGradient(s/2,s/2,0,s/2,s/2,s/2);gr.addColorStop(0,'rgba(255,246,225,1)');gr.addColorStop(1,'rgba(255,246,225,0)');g.fillStyle=gr;g.fillRect(0,0,s,s)});
-const dust=new THREE.Points(dustGeo,new THREE.PointsMaterial({map:dustTex,size:.06,transparent:true,opacity:.55,depthWrite:false,blending:THREE.AdditiveBlending}));
-scene.add(dust);
-
-const ray=new THREE.Raycaster(),pt=new THREE.Vector2();let selected=null,drag=false;
-const plane=new THREE.Plane(new THREE.Vector3(0,1,0),0),offset=new THREE.Vector3(),hit=new THREE.Vector3();
+const ray=new THREE.Raycaster(),pt=new THREE.Vector2();let selected=null,drag=false,plane=new THREE.Plane(new THREE.Vector3(0,1,0),0),offset=new THREE.Vector3(),hit=new THREE.Vector3();
 function pointer(e){const r=canvas.getBoundingClientRect();pt.x=(e.clientX-r.left)/r.width*2-1;pt.y=-(e.clientY-r.top)/r.height*2+1;ray.setFromCamera(pt,camera)}
 function findGroup(o){while(o){if(o.userData?.draggable)return o;o=o.parent}return null}
-function pick(e){pointer(e);return ray.intersectObjects(draggables,true).map(h=>findGroup(h.object)).find(Boolean)||null}
-
+function pick(e){pointer(e);return ray.intersectObjects([table,vase,beanbag],true).map(h=>findGroup(h.object)).find(Boolean)||null}
 const rotationSlider=document.querySelector('#rotationSlider'),rotationValue=document.querySelector('#rotationValue'),rotateHint=document.querySelector('#rotateHint');
-function syncRotation(){const deg=selected?Math.round(THREE.MathUtils.euclideanModulo(selected.userData.targetRot,TAU)*180/Math.PI)%360:0;rotationSlider.value=deg;rotationValue.textContent=deg+'°';rotateHint.textContent=selected?'선택 중: '+labels[selected.name]+' · 360° 회전 가능':'먼저 3D 화면에서 상품을 클릭하세요.'}
-function setRotation(deg){if(!selected){status.textContent='먼저 회전할 상품을 클릭해 주세요.';return}selected.userData.targetRot=THREE.MathUtils.degToRad(((deg%360)+360)%360);syncRotation();status.textContent=labels[selected.name]+' 회전: '+rotationValue.textContent}
+function syncRotation(){const deg=selected?Math.round(THREE.MathUtils.euclideanModulo(selected.rotation.y,Math.PI*2)*180/Math.PI):0;rotationSlider.value=deg;rotationValue.textContent=deg+'°';rotateHint.textContent=selected?'선택 중: '+({table:'거실 좌탁',vase:'화병',beanbag:'옐로우 빈백 소파'}[selected.name])+' · 360° 회전 가능':'먼저 3D 화면에서 상품을 클릭하세요.'}
+function setRotation(deg){if(!selected){status.textContent='먼저 회전할 상품을 클릭해 주세요.';return}selected.rotation.y=THREE.MathUtils.degToRad(((deg%360)+360)%360);syncRotation();status.textContent=({table:'거실 좌탁',vase:'화병',beanbag:'옐로우 빈백 소파'}[selected.name])+' 회전: '+rotationValue.textContent}
 document.querySelector('#rotLeft').onclick=()=>setRotation((Number(rotationSlider.value)-15+360)%360);document.querySelector('#rotRight').onclick=()=>setRotation((Number(rotationSlider.value)+15)%360);rotationSlider.addEventListener('input',()=>setRotation(Number(rotationSlider.value)));
-
-canvas.addEventListener('pointerdown',e=>{if(e.button!==0)return;const g=pick(e);if(!g)return;selected=g;syncRotation();drag=true;controls.enabled=false;canvas.style.cursor='grabbing';plane.set(new THREE.Vector3(0,1,0),-g.position.y);pointer(e);if(ray.ray.intersectPlane(plane,hit))offset.copy(g.position).sub(hit);canvas.setPointerCapture(e.pointerId);status.textContent='선택됨: '+labels[g.name]+' · 드래그해서 이동'});
-canvas.addEventListener('pointermove',e=>{
- if(!drag){canvas.style.cursor=pick(e)?'grab':'';return}
- if(!selected)return;pointer(e);
- if(ray.ray.intersectPlane(plane,hit)){selected.position.x=THREE.MathUtils.clamp(hit.x+offset.x,-3.55,3.55);selected.position.z=THREE.MathUtils.clamp(hit.z+offset.z,-2.55,2.55)}
-});
-function endDrag(){drag=false;controls.enabled=true;canvas.style.cursor=''}
-canvas.addEventListener('pointerup',endDrag);canvas.addEventListener('pointercancel',endDrag);
-canvas.addEventListener('dblclick',e=>{const g=pick(e);if(g)window.open(urls[g.name],'_blank','noopener')});
-
-function resize(){const w=canvas.clientWidth,h=canvas.clientHeight;if(!w||!h)return;renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix()}
-window.addEventListener('resize',resize);resize();
-
-function reset(){
- table.position.set(.25,0,1.05);vase.position.set(1.25,0,-.72);beanbag.position.set(-1.15,0,-.25);
- for(const d of draggables){d.rotation.set(0,0,0);d.userData.targetRot=0;d.userData.lift=0}
- selected=null;syncRotation();camera.position.set(7.8,6.5,9.5);controls.target.set(0,1,0);controls.update();status.textContent='3D 공간 준비 완료 · 가구를 클릭해 선택';
-}
+canvas.addEventListener('pointerdown',e=>{if(e.button!==0)return;const g=pick(e);if(!g)return;selected=g;syncRotation();drag=true;controls.enabled=false;plane.set(new THREE.Vector3(0,1,0),-g.position.y);pointer(e);if(ray.ray.intersectPlane(plane,hit))offset.copy(g.position).sub(hit);canvas.setPointerCapture(e.pointerId);status.textContent='선택됨: '+({chair:'의자',table:'거실 좌탁',vase:'화병',beanbag:'옐로우 빈백 소파'}[g.name])+' · 드래그해서 이동'});
+canvas.addEventListener('pointermove',e=>{if(!drag||!selected)return;pointer(e);if(ray.ray.intersectPlane(plane,hit)){selected.position.x=THREE.MathUtils.clamp(hit.x+offset.x,-3.55,3.55);selected.position.z=THREE.MathUtils.clamp(hit.z+offset.z,-2.55,2.55)}});
+function endDrag(){drag=false;controls.enabled=true}canvas.addEventListener('pointerup',endDrag);canvas.addEventListener('pointercancel',endDrag);canvas.addEventListener('dblclick',e=>{const g=pick(e);if(g)window.open(urls[g.name],'_blank','noopener')});
+function resize(){const w=canvas.clientWidth,h=canvas.clientHeight;if(!w||!h)return;renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix()}window.addEventListener('resize',resize);resize();
+function reset(){table.position.set(.25,0,1.05);vase.position.set(1.25,0,-.72);beanbag.position.set(-1.15,0,-.25);table.rotation.set(0,0,0);vase.rotation.set(0,0,0);beanbag.rotation.set(0,0,0);selected=null;syncRotation();camera.position.set(7.8,6.5,9.5);controls.target.set(0,1,0);controls.update();status.textContent='3D 공간 준비 완료 · 가구를 클릭해 선택'}
 document.querySelector('#reset').onclick=reset;document.querySelector('#home').onclick=()=>{camera.position.set(7.8,6.5,9.5);controls.target.set(0,1,0);controls.update()};document.querySelector('#zin').onclick=()=>camera.position.sub(controls.target).multiplyScalar(.88).add(controls.target);document.querySelector('#zout').onclick=()=>camera.position.sub(controls.target).multiplyScalar(1.12).add(controls.target);document.querySelectorAll('[data-product]').forEach(b=>b.onclick=()=>window.open(urls[b.dataset.product],'_blank','noopener'));
-status.textContent='3D 공간 준비 완료 · 가구를 클릭해 선택';syncRotation();
-
-// Anime-style avatar: a toon-shaded figure with ink outlines, built from primitives and animated in code.
-const animateAvatar=(()=>{
-const SKIN='#ffe6d6',HAIR='#8a5a3c',SHIRT='#ffc9a8',PANTS='#8fa6d6',SHOE='#7a6259',IRIS='#8a5a8a',BLUSH='#ffb3c1',INK='#2a211d';
-const toonRamp=new THREE.DataTexture(new Uint8Array([170,225,255]),3,1,THREE.RedFormat);
-toonRamp.minFilter=THREE.NearestFilter;toonRamp.magFilter=THREE.NearestFilter;toonRamp.needsUpdate=true;
-const inkMat=new THREE.MeshBasicMaterial({color:INK,side:THREE.BackSide});
-const toonCache={};
-const toon=c=>toonCache[c]||(toonCache[c]=new THREE.MeshToonMaterial({color:c,gradientMap:toonRamp}));
-
-const avatar=new THREE.Group();avatar.name='avatar';avatar.position.set(-2.1,0,1);avatar.rotation.y=.72;scene.add(avatar);
-function joint(parent,x,y,z){const g=new THREE.Group();g.position.set(x,y,z);parent.add(g);return g}
-// A toon-shaded body part with an optional ink outline (a slightly larger back-face copy).
-function part(parent,geo,color,x,y,z,sx=1,sy=1,sz=1,outline=true){
- const g=joint(parent,x,y,z);
- const m=new THREE.Mesh(geo,toon(color));m.scale.set(sx,sy,sz);m.castShadow=true;m.receiveShadow=true;g.add(m);
- if(outline){const o=new THREE.Mesh(geo,inkMat);o.scale.set(sx*1.04,sy*1.04,sz*1.04);g.add(o)}
- return g;
-}
-const flat=c=>new THREE.MeshBasicMaterial({color:c});
-
-// Body: hips > torso > head, with arms and legs on their own joints.
-const hips=joint(avatar,0,.99,0);
-part(hips,new THREE.CapsuleGeometry(.15,.1,6,14),PANTS,0,.02,0,1,1,.9);
-const torso=joint(hips,0,.1,0);
-const chest=part(torso,new THREE.CapsuleGeometry(.19,.26,8,16),SHIRT,0,.22,0,1,1,.85);
-part(torso,new THREE.CylinderGeometry(.075,.085,.12,14),SKIN,0,.52,0);
-const headPivot=joint(torso,0,.6,0);
-
-function arm(side){
- const sh=joint(torso,side*.27,.4,0);
- part(sh,new THREE.CapsuleGeometry(.07,.2,6,12),SHIRT,0,-.17,0);
- const el=joint(sh,0,-.34,0);
- part(el,new THREE.CapsuleGeometry(.058,.18,6,12),SKIN,0,-.15,0);
- const wr=joint(el,0,-.31,0);
- part(wr,new THREE.SphereGeometry(.075,16,12),SKIN,0,-.07,0,.9,1.2,.7);
- return {sh,el,wr};
-}
-const rArm=arm(1),lArm=arm(-1);
-
-function leg(side){
- const hip=joint(hips,side*.11,0,0);
- part(hip,new THREE.CapsuleGeometry(.1,.18,6,12),PANTS,0,-.24,0);
- const knee=joint(hip,0,-.48,0);
- part(knee,new THREE.CapsuleGeometry(.085,.25,6,12),PANTS,0,-.21,0);
- const ankle=joint(knee,0,-.42,0);
- part(ankle,new RoundedBoxGeometry(.16,.1,.28,3,.04),SHOE,0,-.04,.07);
-}
-leg(1);leg(-1);
-
-// Head: big anime-style face, layered hair, ponytail.
-part(headPivot,new THREE.SphereGeometry(.24,28,20),SKIN,0,0,0,1,1.05,.98);
-part(headPivot,new THREE.SphereGeometry(.27,24,16),HAIR,0,.05,-.05,1.02,1.1,.95);
-part(headPivot,new THREE.SphereGeometry(.26,24,14),HAIR,0,.12,.09,1.02,.52,.82).rotation.x=.25;
-part(headPivot,new THREE.CapsuleGeometry(.06,.2,6,10),HAIR,-.2,-.02,.06).rotation.z=.15;
-part(headPivot,new THREE.CapsuleGeometry(.06,.2,6,10),HAIR,.2,-.02,.06).rotation.z=-.15;
-part(headPivot,new THREE.SphereGeometry(.05,12,10),SKIN,-.235,0,0,.6,1,.8,false);
-part(headPivot,new THREE.SphereGeometry(.05,12,10),SKIN,.235,0,0,.6,1,.8,false);
-const tail=joint(headPivot,0,.12,-.22);
-part(tail,new THREE.SphereGeometry(.1,18,14),HAIR,0,-.12,-.05,.8,1.8,.8);
-
-// Eyes: big glossy irises with highlight and a dark upper lash line; they blink by squashing.
-const eyeJoints=[];
-for(const s of [-1,1]){
- const e=joint(headPivot,s*.095,.005,.2);
- eyeJoints.push(e);
- part(e,new THREE.SphereGeometry(.065,16,12),'#ffffff',0,0,0,1,1.25,.45,false);
- part(e,new THREE.SphereGeometry(.045,16,12),IRIS,0,-.005,.02,1,1.3,.4,false);
- const hl=new THREE.Mesh(new THREE.SphereGeometry(.016,10,8),flat('#ffffff'));hl.position.set(.014,.022,.05);e.add(hl);
- const lash=new THREE.Mesh(new THREE.TorusGeometry(.068,.012,6,16,Math.PI),flat(INK));lash.scale.set(1,1.25,.45);lash.position.set(0,0,.02);e.add(lash);
-}
-for(const s of [-1,1]){
- part(headPivot,new THREE.CapsuleGeometry(.014,.07,4,8),HAIR,s*.1,.13,.215,1,1,1,false).rotation.z=s*-.2;
- part(headPivot,new THREE.SphereGeometry(.035,12,10),BLUSH,s*.15,-.06,.2,1.3,.7,.4,false);
-}
-const mouth=new THREE.Mesh(new THREE.TorusGeometry(.03,.009,6,14,Math.PI),flat('#8a4a48'));
-mouth.position.set(0,-.1,.215);mouth.rotation.z=Math.PI;headPivot.add(mouth);
-
-contactShadow(avatar,0,0,.7,.6);
-
-// Idle motion: breathing, looking around, blinking, ponytail sway, and a wave every 8 seconds.
-return function animateAvatar(t){
- if(reduceMotion)return;
- hips.position.y=.99+Math.sin(t*2)*.004;
- chest.scale.set(1,1+Math.sin(t*2)*.012,1);
- headPivot.rotation.y=Math.sin(t*.45)*.22;
- headPivot.rotation.z=Math.sin(t*.7)*.04;
- tail.rotation.z=Math.sin(t*2.2)*.18;
- tail.rotation.x=-.05+Math.sin(t*1.6)*.06;
- const blink=Math.max(0,1-Math.abs((t%4)-3.85)/.1);
- for(const e of eyeJoints)e.scale.y=1-blink*.9;
- lArm.sh.rotation.z=-.12+Math.sin(t*1.1)*.03;
- lArm.el.rotation.x=-.2+Math.sin(t*1.1+.5)*.03;
- const cycle=t%8;
- const wave=cycle<2.5?Math.min(1,cycle*3,(2.5-cycle)*3):0;
- rArm.sh.rotation.z=.12+wave*2.1;
- rArm.el.rotation.x=-.2-wave*.9;
- rArm.wr.rotation.z=wave*Math.sin(t*9)*.4;
-};
-})();
-
-// Idle life: sun drift, swaying flowers, breathing beanbag, drifting dust, smooth rotation and lift.
-const clock=new THREE.Clock();
-function animate(){
- requestAnimationFrame(animate);
- const dt=Math.min(clock.getDelta(),.05),t=clock.elapsedTime;
- for(const d of draggables){
-  const diff=THREE.MathUtils.euclideanModulo(d.userData.targetRot-d.rotation.y+Math.PI,TAU)-Math.PI;
-  d.rotation.y+=diff*(1-Math.exp(-dt*10));
-  const liftTarget=d===selected&&drag?.14:0;
-  d.userData.lift+=(liftTarget-d.userData.lift)*(1-Math.exp(-dt*14));
-  d.position.y=d.userData.lift;
- }
- if(!reduceMotion){
-  const a=t*.035;sun.position.set(-4.5+Math.sin(a)*2.2,9,6+Math.cos(a)*1.2);
-  bouquet.rotation.z=Math.sin(t*.9)*.025;bouquet.rotation.x=Math.cos(t*.7)*.02;
-  const breath=Math.sin(t*1.7);beanbag.scale.set(1+breath*.004,1+breath*.008,1+breath*.004);
-  const pos=dustGeo.attributes.position;
-  for(let i=0;i<dustCount;i++){
-   pos.array[i*3+1]+=dt*dustSpeed[i]*.03;pos.array[i*3]+=Math.sin(t*.5+i)*dt*.02;
-   if(pos.array[i*3+1]>3.6)pos.array[i*3+1]=0;
-  }
-  pos.needsUpdate=true;
- }
- animateAvatar(t);
- controls.update();renderer.render(scene,camera);
-}
-animate();
+status.textContent='3D 공간 준비 완료 · 가구를 클릭해 선택';syncRotation();function animate(){requestAnimationFrame(animate);controls.update();renderer.render(scene,camera)}animate();
 </script>
 </body>
 </html>
